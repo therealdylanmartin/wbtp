@@ -1,0 +1,11 @@
+@import "partials/global.mixins.scss";
+@import "partials/global.variables.scss";
+@import "partials/global.tags.scss";
+
+@import "partials/layout.header.scss";
+@import "partials/layout.mobile-nav.scss";
+
+@import "partials/home/module.home-1.scss";
+@import "partials/home/module.home-2.scss";
+
+@import "partials/layout.footer.scss"

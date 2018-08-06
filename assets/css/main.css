@@ -1,0 +1,70 @@
+/*  Clear Floats  */
+/*  Breakpoints  */
+/*  Colors  */
+/*  Fonts  */
+/*  Measurement Units  */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; }
+
+a {
+  background-color: transparent; }
+
+button,
+input {
+  overflow: visible; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0; }
+
+h1 {
+  color: #fff;
+  font-family: "Lusitana", serif;
+  font-weight: 700; }
+
+h2,
+h3,
+h4 {
+  color: #15B6B8;
+  font-family: "Fira Sans", sans-serif;
+  font-variant: small-caps;
+  font-weight: 700; }
+
+p,
+p a {
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic; }
+
+p {
+  color: #111;
+  font-weight: 400;
+  max-width: 515px; }
+
+p a {
+  font-weight: 500; }
+
+img {
+  border-style: none;
+  display: block;
+  max-width: 100%; }
+
+strong {
+  font-weight: bold; }

@@ -1,0 +1,39 @@
+/*  Breakpoints  */
+
+$screen-xs: "26.25em"; // 420px
+$screen-sm: "35em"; // 560px
+$screen-md: "49.25em"; // 788px
+$screen-lg: "61.25em"; // 980px
+$screen-xl: "75em"; // 1200px
+$screen-height: "700px";
+
+/*  Colors  */
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-gray-light: #777;
+$color-gray: #595854;
+$color-gray-dark: #111;
+
+$color-primary: #15B6B8;
+
+$color-secondary: rgba($color-white,.64);
+
+/*  Fonts  */
+
+$font-primary: "Fira Sans", sans-serif;
+$font-secondary: "Lusitana", serif;
+$font-attr: "Courier New", monospace;
+
+$font-size-default: 1.6rem;
+
+$p-max-width: 515px;
+
+/*  Measurement Units  */
+
+$unit-xs: 10px;
+$unit-sm: 20px;
+$unit-md: 40px;
+$unit-lg: 80px;
+$unit-xl: 120px;

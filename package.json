@@ -1,0 +1,23 @@
+{
+  "name": "wbtp",
+  "version": "1.0.0",
+  "description": "Nonprofit abolishonist group in Madison, WI",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "watch:sass": "node-sass sass/main.scss assets/css/main.css -w",
+    "compile:sass": "node-sass sass/main.scss assets/css/main.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' assets/css/main.css -o assets/css/prefix/main.prefix.css",
+    "compress:css": "node-sass assets/css/prefix/main.prefix.css assets/css/min/main.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "keywords": [],
+  "author": "Dylan Martin",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "node-sass": "^4.9.2",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.0"
+  }
+}
