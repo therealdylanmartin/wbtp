@@ -1,0 +1,236 @@
+.header {
+    background-color: $color-primary;
+    position: fixed;
+    width: 100%;
+    width: 100vw;
+
+    @include screen-md {
+        position: static;
+    }
+
+    @include screen-xs {
+        background-color: #fff;
+    }
+
+
+    h1 {
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+}
+
+.header__content {
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 0 0 calc(#{$unit-xs} - 5px);
+    max-width: 1100px;
+
+    @include screen-md {
+        display: block;
+        padding: 0;
+    }
+
+    nav {
+        align-items: stretch;
+        display: flex;
+
+        @include screen-md {
+            border-top: solid #fff 2px;
+        }
+
+        @include screen-sm {
+            border-top: none;
+            @include clearfix;
+        }
+
+        ul {
+            display: flex;
+            align-items: stretch;
+            list-style-type: none;
+
+            @include screen-md {
+                height: auto;
+                justify-content: center;
+                margin: 0 auto;
+                width: auto;
+            }
+
+            @include screen-sm {
+                display: block;
+                width: 100%;
+            }
+
+            @include screen-xs {
+                background-color: $color-primary;
+            }
+
+            li {
+                align-items: center;
+                display: flex;
+                position: relative;
+
+                @include screen-sm {
+                    display: block;
+                    float: left;
+                    position: static;
+                    width: 50%;
+                }
+
+
+                @include screen-xs {
+                    width: 100%;
+                    float: none;
+                }
+
+                &:nth-child(odd) a {
+                    @include screen-sm {
+                        border-right: solid #fff 2px;
+                    }
+
+
+                    @include screen-xs {
+                        border-right: none;
+                    }
+                }
+
+                a {
+                    align-items: center;
+                    display: flex;
+                    font-family: $font-primary;
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    height: 100%;
+                    padding-left: $unit-xs;
+                    padding-right: $unit-xs;
+                    transition: color .3s ease-in-out;
+                    z-index: 2;
+
+                    @include screen-md {
+                        padding: $unit-xs;
+                    }
+
+
+                    @include screen-sm {
+                        border-right: none;
+                        border-top: solid #fff 2px;
+                        font-size: 2.6rem;
+                        justify-content: center;
+                        padding-left: 0;
+                        padding-right: 0;
+                        text-align: center;
+                    }
+
+                    @include screen-xs {
+                        font-size: 2.4rem;
+                    }
+
+                    &:link,
+                    &:visited {
+                        color: #fff;
+                        letter-spacing: .0625em;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+
+                    &:hover,
+                    &:active {
+                        color: $color-primary;
+
+                        @include screen-sm {
+                            background-color: $color-overlay;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header__logo {
+    @include screen-md {
+        display: none;
+    }
+
+    picture {
+        img {
+            width: 180px;
+        }
+    }
+}
+
+.header__logo--tablet {
+    display: none;
+
+    @include screen-md {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    @include screen-xs {
+        display: none;
+    }
+
+    picture {
+        margin: $unit-sm auto;
+        width: 400px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.header__logo--mobile {
+    display: none;
+
+    @include screen-xs {
+        display: block;
+    }
+
+    picture {
+        margin: 0;
+        width: 100%;
+        width: 100vw;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.header__divider {
+    background-color: $color-gray-dark;
+    border-radius: 50%;
+    height: 8px;
+    margin-left: -4px;
+    margin-right: -4px;
+    width: 8px;
+    z-index: 2;
+
+    @include screen-sm {
+        display: none;
+    }
+}
+
+.header__mask {
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom: solid $color-primary 0px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    transition: all .3s ease-in-out;
+    width: 100%;
+
+    @include screen-sm {
+        display: none;
+    }
+}
+
+.header__content a:hover ~ .header__mask {
+    background-color: $color-overlay;
+    border-bottom-width: 8px;
+}
