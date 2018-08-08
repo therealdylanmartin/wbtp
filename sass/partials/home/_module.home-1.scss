@@ -1,0 +1,55 @@
+.home-1 {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    margin-top: $unit-md;
+    margin-bottom: $unit-lg;
+    max-width: 960px;
+}
+
+.home-1__logo {
+    margin-right: 3%;
+    margin-top: 8px;
+    width: 42%;
+
+    @include screen-md {
+        display: none;
+    }
+
+    picture {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.home-1__content {
+    width: 55%;
+
+    @include screen-md {
+        margin-left: $unit-xs;
+        width: auto;
+    }
+
+    @include screen-sm {
+        margin-left: 0;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    hr {
+        border-color: $color-primary;
+        border-style: solid;
+        margin-bottom: 8px;
+        margin-top: -2px;
+        max-width: 370px;
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
