@@ -82,6 +82,10 @@ p {
     margin-bottom: calc(#{$unit-xs} + 5px);
     max-width: $p-max-width;
 
+    @include screen-xl {
+        font-size: 1.7rem;
+    }
+
     @include screen-md {
         line-height: 1.45;
         margin-bottom: calc(#{$unit-sm} + 10px);
