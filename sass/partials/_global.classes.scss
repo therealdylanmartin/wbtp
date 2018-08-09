@@ -1,3 +1,43 @@
 .section {
     margin: 0 auto;
 }
+
+.section-copy {
+    margin: $unit-md auto;
+
+    h2 {
+        font-size: 4.6rem;
+        text-align: center;
+    }
+
+    hr {
+        border: solid $color-primary 1.5px;
+        margin: 0 auto $unit-sm;
+        max-width: 400px;
+    }
+}
+
+.section-copy__subtext-1 {
+    color: $color-gray-dark;
+    font-family: $font-primary;
+    font-size: 5.4rem;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: $unit-md;
+    text-align: center;
+    white-space: nowrap;
+
+    @include screen-sm {
+        font-size: 4.6rem;
+    }
+
+    @include screen-xs {
+        font-size: 3.8rem;
+    }
+
+    span {
+        color: $color-primary;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
