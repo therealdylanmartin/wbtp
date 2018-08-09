@@ -26,21 +26,6 @@
         transition: background-color .3s ease-in-out;
         width: 50%;
 
-        &:hover,
-        &:active {
-            background-color: $color-overlay;
-
-            h2 {
-                color: $color-primary;
-            }
-        }
-
-        &:active {
-            h2 {
-                font-style: italic;
-            }
-        }
-
         @include screen-xl {
             height: 335px;
         }
@@ -56,6 +41,21 @@
             justify-content: space-evenly;
             padding: $unit-sm 0;
             width: 100%;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $color-overlay;
+
+            h2 {
+                color: $color-primary;
+            }
+        }
+
+        &:active {
+            h2 {
+                font-style: italic;
+            }
         }
 
         &:nth-child(1),
@@ -74,6 +74,20 @@
 
         &:nth-child(even) {
             border-left: solid #fff 1px;
+        }
+
+        &:first-child{
+            @include screen-sm {
+                border-bottom: none;
+                border-right: none;
+            }
+        }
+
+        &:not(:first-child) {
+            @include screen-sm {
+                border: none;
+                border-top: solid #fff 2px;
+            }
         }
 
         h2 {

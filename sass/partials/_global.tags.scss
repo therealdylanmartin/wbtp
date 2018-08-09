@@ -22,6 +22,11 @@ body {
 
 a {
     background-color: transparent;
+
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
 }
 
 button,

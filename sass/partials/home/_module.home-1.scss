@@ -37,6 +37,10 @@
 
     h2 {
         font-size: 2.8rem;
+
+        @include screen-xs {
+            text-align: center;
+        }
     }
 
     hr {
