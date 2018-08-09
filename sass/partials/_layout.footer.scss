@@ -14,7 +14,7 @@
     hr {
         display: none;
 
-        @include screen-xs {
+        @include screen-sm {
             border: solid #fff 1px;
             display: block;
             margin: $unit-xs auto;
@@ -47,25 +47,14 @@
     }
 }
 
-.footer__logo--tablet {
+.footer__logo--mobile {
     display: none;
 
     @include screen-sm {
         display: block;
+        margin: 0 auto;
         width: 100%;
-    }
-
-    @include screen-xs {
-        display: none;
-    }
-}
-
-.footer__logo--mobile {
-    display: none;
-
-    @include screen-xs {
-        display: block;
-        width: 100%;
+        max-width: 400px;
     }
 }
 
@@ -83,12 +72,9 @@
     }
 
     @include screen-sm {
+        border: none;
         min-height: 320px;
         width: 100%;
-    }
-
-    @include screen-xs {
-        border: none;
     }
 
     span {
@@ -186,11 +172,11 @@
     padding: $unit-sm;
 
     @include screen-sm {
-        padding: calc(#{$unit-md} - 10px) $unit-xs;
+        border: none;
+        padding: calc(#{$unit-md} - 10px) $unit-xs 0;
     }
 
     @include screen-xs {
-        border: none;
         padding: $unit-sm 0 0;
     }
 

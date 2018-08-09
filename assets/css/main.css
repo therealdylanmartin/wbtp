@@ -406,6 +406,19 @@ strong {
     .home-2__icon svg {
       width: 28vw; } }
 
+.money__01,
+.book__01,
+.contact__01,
+.laptop__01 {
+  fill: #FFFFFF;
+  transition: fill .3s ease-in; }
+
+.home-2__content a:hover .money__01, .home-2__content a:active .money__01,
+.home-2__content a:hover .book__01, .home-2__content a:active .book__01,
+.home-2__content a:hover .contact__01, .home-2__content a:active .contact__01,
+.home-2__content a:hover .laptop__01, .home-2__content a:active .laptop__01 {
+  fill: #15B6B8; }
+
 .footer {
   background-color: #595854;
   padding: 80px 40px; }
@@ -418,7 +431,7 @@ strong {
   max-width: 800px; }
   .footer__content hr {
     display: none; }
-    @media only screen and (max-width: 26.25em) {
+    @media only screen and (max-width: 36.25em) {
       .footer__content hr {
         border: solid #fff 1px;
         display: block;
@@ -442,22 +455,14 @@ strong {
   .footer__logo img {
     width: 100%; }
 
-.footer__logo--tablet {
-  display: none; }
-  @media only screen and (max-width: 36.25em) {
-    .footer__logo--tablet {
-      display: block;
-      width: 100%; } }
-  @media only screen and (max-width: 26.25em) {
-    .footer__logo--tablet {
-      display: none; } }
-
 .footer__logo--mobile {
   display: none; }
-  @media only screen and (max-width: 26.25em) {
+  @media only screen and (max-width: 36.25em) {
     .footer__logo--mobile {
       display: block;
-      width: 100%; } }
+      margin: 0 auto;
+      width: 100%;
+      max-width: 400px; } }
 
 .footer__contact-info {
   align-items: center;
@@ -472,11 +477,9 @@ strong {
       width: 66.67%; } }
   @media only screen and (max-width: 36.25em) {
     .footer__contact-info {
+      border: none;
       min-height: 320px;
       width: 100%; } }
-  @media only screen and (max-width: 26.25em) {
-    .footer__contact-info {
-      border: none; } }
   .footer__contact-info span h3 {
     font-size: 2.8rem; }
     @media only screen and (max-width: 52.5em) {
@@ -548,10 +551,10 @@ strong {
   padding: 20px; }
   @media only screen and (max-width: 36.25em) {
     .footer__network {
-      padding: calc(40px - 10px) 10px; } }
+      border: none;
+      padding: calc(40px - 10px) 10px 0; } }
   @media only screen and (max-width: 26.25em) {
     .footer__network {
-      border: none;
       padding: 20px 0 0; } }
   .footer__network p {
     color: #fff;

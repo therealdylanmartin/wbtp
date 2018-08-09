@@ -133,3 +133,17 @@
         }
     }
 }
+
+.money__01,
+.book__01,
+.contact__01,
+.laptop__01 {
+    fill:#FFFFFF;
+    transition:fill .3s ease-in
+}
+.home-2__content a:hover .money__01, .home-2__content a:active .money__01,
+.home-2__content a:hover .book__01, .home-2__content a:active .book__01,
+.home-2__content a:hover .contact__01, .home-2__content a:active .contact__01,
+.home-2__content a:hover .laptop__01, .home-2__content a:active .laptop__01 {
+    fill:#15B6B8
+}
