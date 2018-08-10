@@ -1,0 +1,217 @@
+.donate-1 {
+    background-color: rgba($color-primary,.6);
+    margin-left: -$unit-sm;
+    width: 100%;
+    width: 100vw;
+
+    @include screen-xs {
+        margin-left: -$unit-xs;
+    }
+}
+
+.donate-1__content {
+    background-color: $color-primary;
+    margin: 0 auto;
+    max-width: 1100px;
+    @include clearfix;
+}
+
+.donate-1__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    justify-content: space-evenly;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+    width: 50%;
+
+    @include screen-xl {
+        height: 335px;
+    }
+
+    @include screen-lg {
+        height: 290px;
+    }
+
+    @include screen-sm {
+        flex-direction: row;
+        float: none;
+        height: auto;
+        justify-content: space-evenly;
+        padding: $unit-sm 0;
+        width: 100%;
+    }
+
+    &:nth-child(1) {
+        border-right: solid #fff 1px;
+
+        @include screen-sm {
+            border-right: none;
+            border-bottom: solid #fff 1px;
+        }
+    }
+
+    &:nth-child(2) {
+        border-left: solid #fff 1px;
+
+        @include screen-sm {
+            border-left: none;
+            border-top: solid #fff 1px;
+        }
+    }
+
+    a {
+        align-items: center;
+        background-color: #fff;
+        border: solid #fff 1px;
+        border-radius: 27px;
+        color: $color-primary;
+        display: flex;
+        font-family: $font-primary;
+        font-size: 3.6rem;
+        font-weight: 500;
+        height: 54px;
+        justify-content: center;
+        line-height: 1;
+        padding: 0 $unit-md;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color .3s ease-in-out, color .3s ease-in;
+        z-index: 2;
+
+        @include screen-lg {
+            border-radius: 23px;
+            height: 46px;
+            font-size: 2.9rem;
+            padding: 0 calc(#{$unit-md} - 10px);
+        }
+
+        @include screen-md {
+            padding: 0 $unit-sm;
+        }
+
+        @include screen-sm {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            color: #fff;
+            font-size: 6.25vw;
+            padding: 0;
+            transition: background-color 0s ease-in-out, color .3s ease-in;
+            width: 52vw;
+        }
+
+        @include screen-xs {
+            font-size: 7.25vw;
+        }
+
+        &:hover,
+        &:active {
+            background-color: $color-primary;
+            color: #fff;
+
+            @include screen-sm {
+                background-color: transparent;
+                font-style: normal;
+            }
+        }
+
+        &:active {
+            font-style: italic;
+        }
+    }
+}
+
+.donate-1__icon {
+    svg {
+        position: relative;
+        width: 160px;
+        z-index: 2;
+
+        @include screen-xl {
+            width: 180px;
+        }
+
+        @include screen-lg {
+            width: 148px;
+        }
+
+        @include screen-sm {
+            cursor: pointer;
+            width: 28vw
+        }
+    }
+}
+
+a.donate-1__mask {
+    display: none;
+
+    @include screen-sm {
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+
+    &:hover,
+    &:active {
+        background-color: transparent;
+    }
+}
+
+.donate-1__hover {
+    display: none;
+
+    @include screen-sm {
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.money__02,
+.book__02 {
+    fill:#FFFFFF;
+    transition:fill .3s ease-in
+}
+
+a.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
+a.donate-1__mask:hover ~ .donate-1__icon svg .book__02,
+a.donate-1__mask:active ~ .donate-1__icon svg .money__02,
+a.donate-1__mask:active ~ .donate-1__icon svg .book__02 {
+    @include screen-sm {
+        fill: $color-primary;
+    }
+}
+
+a.donate-1__mask:hover ~ a,
+a.donate-1__mask:active ~ a {
+    @include screen-sm {
+        color: $color-primary;
+    }
+}
+
+a.donate-1__mask:active ~ a {
+    @include screen-sm {
+        font-style: italic;
+    }
+}
+
+a.donate-1__mask:hover ~ .donate-1__hover,
+a.donate-1__mask:active ~ .donate-1__hover {
+    @include screen-sm {
+        background-color: $color-overlay;
+    }
+}

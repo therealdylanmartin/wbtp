@@ -96,7 +96,8 @@ strong {
   background-color: #15B6B8;
   position: fixed;
   width: 100%;
-  width: 100vw; }
+  width: 100vw;
+  z-index: 4; }
   @media only screen and (max-width: 52.5em) {
     .header {
       position: static; } }
@@ -273,7 +274,7 @@ strong {
   margin: 0 auto; }
 
 .section-copy {
-  margin: 40px auto; }
+  margin: 40px auto 80px; }
   .section-copy h2 {
     font-size: 4.6rem;
     text-align: center; }
@@ -451,6 +452,180 @@ strong {
 .home-2__content a:hover .laptop__01, .home-2__content a:active .laptop__01 {
   fill: #15B6B8; }
 
+.donate-1 {
+  background-color: rgba(21, 182, 184, 0.6);
+  margin-left: -20px;
+  width: 100%;
+  width: 100vw; }
+  @media only screen and (max-width: 26.25em) {
+    .donate-1 {
+      margin-left: -10px; } }
+
+.donate-1__content {
+  background-color: #15B6B8;
+  margin: 0 auto;
+  max-width: 1100px; }
+  .donate-1__content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.donate-1__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 310px;
+  justify-content: space-evenly;
+  float: left;
+  position: relative;
+  text-decoration: none;
+  transition: background-color .3s ease-in-out;
+  width: 50%; }
+  @media only screen and (min-width: 68.75em) {
+    .donate-1__item {
+      height: 335px; } }
+  @media only screen and (max-width: 61.25em) {
+    .donate-1__item {
+      height: 290px; } }
+  @media only screen and (max-width: 36.25em) {
+    .donate-1__item {
+      flex-direction: row;
+      float: none;
+      height: auto;
+      justify-content: space-evenly;
+      padding: 20px 0;
+      width: 100%; } }
+  .donate-1__item:nth-child(1) {
+    border-right: solid #fff 1px; }
+    @media only screen and (max-width: 36.25em) {
+      .donate-1__item:nth-child(1) {
+        border-right: none;
+        border-bottom: solid #fff 1px; } }
+  .donate-1__item:nth-child(2) {
+    border-left: solid #fff 1px; }
+    @media only screen and (max-width: 36.25em) {
+      .donate-1__item:nth-child(2) {
+        border-left: none;
+        border-top: solid #fff 1px; } }
+  .donate-1__item a {
+    align-items: center;
+    background-color: #fff;
+    border: solid #fff 1px;
+    border-radius: 27px;
+    color: #15B6B8;
+    display: flex;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 3.6rem;
+    font-weight: 500;
+    height: 54px;
+    justify-content: center;
+    line-height: 1;
+    padding: 0 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s ease-in-out, color .3s ease-in;
+    z-index: 2; }
+    @media only screen and (max-width: 61.25em) {
+      .donate-1__item a {
+        border-radius: 23px;
+        height: 46px;
+        font-size: 2.9rem;
+        padding: 0 calc(40px - 10px); } }
+    @media only screen and (max-width: 52.5em) {
+      .donate-1__item a {
+        padding: 0 20px; } }
+    @media only screen and (max-width: 36.25em) {
+      .donate-1__item a {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        color: #fff;
+        font-size: 6.25vw;
+        padding: 0;
+        transition: background-color 0s ease-in-out, color .3s ease-in;
+        width: 52vw; } }
+    @media only screen and (max-width: 26.25em) {
+      .donate-1__item a {
+        font-size: 7.25vw; } }
+    .donate-1__item a:hover, .donate-1__item a:active {
+      background-color: #15B6B8;
+      color: #fff; }
+      @media only screen and (max-width: 36.25em) {
+        .donate-1__item a:hover, .donate-1__item a:active {
+          background-color: transparent;
+          font-style: normal; } }
+    .donate-1__item a:active {
+      font-style: italic; }
+
+.donate-1__icon svg {
+  position: relative;
+  width: 160px;
+  z-index: 2; }
+  @media only screen and (min-width: 68.75em) {
+    .donate-1__icon svg {
+      width: 180px; } }
+  @media only screen and (max-width: 61.25em) {
+    .donate-1__icon svg {
+      width: 148px; } }
+  @media only screen and (max-width: 36.25em) {
+    .donate-1__icon svg {
+      cursor: pointer;
+      width: 28vw; } }
+
+a.donate-1__mask {
+  display: none; }
+  @media only screen and (max-width: 36.25em) {
+    a.donate-1__mask {
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 3; } }
+  a.donate-1__mask:hover, a.donate-1__mask:active {
+    background-color: transparent; }
+
+.donate-1__hover {
+  display: none; }
+  @media only screen and (max-width: 36.25em) {
+    .donate-1__hover {
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1; } }
+
+.money__02,
+.book__02 {
+  fill: #FFFFFF;
+  transition: fill .3s ease-in; }
+
+@media only screen and (max-width: 36.25em) {
+  a.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
+  a.donate-1__mask:hover ~ .donate-1__icon svg .book__02,
+  a.donate-1__mask:active ~ .donate-1__icon svg .money__02,
+  a.donate-1__mask:active ~ .donate-1__icon svg .book__02 {
+    fill: #15B6B8; } }
+
+@media only screen and (max-width: 36.25em) {
+  a.donate-1__mask:hover ~ a,
+  a.donate-1__mask:active ~ a {
+    color: #15B6B8; } }
+
+@media only screen and (max-width: 36.25em) {
+  a.donate-1__mask:active ~ a {
+    font-style: italic; } }
+
+@media only screen and (max-width: 36.25em) {
+  a.donate-1__mask:hover ~ .donate-1__hover,
+  a.donate-1__mask:active ~ .donate-1__hover {
+    background-color: rgba(255, 255, 255, 0.64); } }
+
 .footer {
   background-color: #595854;
   padding: 80px 40px; }
@@ -513,10 +688,11 @@ strong {
       min-height: 320px;
       width: 100%; } }
   .footer__contact-info span h3 {
-    font-size: 2.8rem; }
+    font-size: 2.8rem;
+    letter-spacing: .0625em; }
     @media only screen and (max-width: 52.5em) {
       .footer__contact-info span h3 {
-        font-size: 3.1vw; } }
+        font-size: 3.4vw; } }
     @media only screen and (max-width: 36.25em) {
       .footer__contact-info span h3 {
         font-size: 2.8rem; } }

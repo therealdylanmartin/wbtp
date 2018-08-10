@@ -81,9 +81,10 @@
     
         h3 {
             font-size: 2.8rem;
+            letter-spacing: .0625em;
 
             @include screen-md {
-                font-size: 3.1vw;
+                font-size: 3.4vw;
             }
 
             @include screen-sm {
