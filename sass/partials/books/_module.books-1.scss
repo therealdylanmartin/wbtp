@@ -1,0 +1,161 @@
+.books-1 {
+    background-color: $color-primary;
+    margin-left: -$unit-sm;
+    padding: $unit-lg $unit-sm;
+    width: 100%;
+    width: 100vw;
+
+    @include screen-sm {
+        padding: $unit-lg $unit-xs;
+    }
+
+    @include screen-xs {
+        margin-left: -$unit-xs;
+    }
+}
+
+.books-1__content {
+    margin: 0 auto;
+    max-width: 846px;
+}
+
+.books-1__composition-1 {
+    background-color: #fff;
+    padding: $unit-sm;
+
+    @include screen-sm {
+        background-color: transparent;
+        padding: $unit-sm 0;
+    }
+
+    h2 {
+        font-size: 4.6rem;
+        line-height: 1;
+        text-align: center;
+
+        @include screen-sm {
+            color: #fff;
+        }
+    }
+
+    hr {
+        border: solid $color-primary 1.5px;
+        margin: $unit-xs auto;
+        max-width: 400px;
+
+        @include screen-sm {
+            border-color: #fff;
+        }
+    }
+
+    h5 {
+        color: $color-primary;
+        font-size: 2.1rem;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 1.5625;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 480px;
+
+        @include screen-sm {
+            color: #fff;
+        }
+
+        @include screen-xs {
+            font-size: 1.8rem;
+            margin: 0 $unit-xs;
+        }
+    }
+}
+
+.books-1__composition-2 {
+    border: solid #fff 2px;
+    border-top: none;
+    padding: $unit-sm $unit-md;
+
+    @include screen-md {
+        padding: $unit-sm;
+    }
+
+    @include screen-sm {
+        border: none;
+        padding: $unit-sm 0;
+    }
+
+    h4 {
+        color: #fff;
+        font-size: 4.2rem;
+        font-style: italic;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+.books-1__address-box {
+    display: flex;
+    justify-content: space-around;
+    padding: $unit-xs 0 $unit-md;
+
+    @include screen-sm {
+        display: block;
+    }
+
+    &:last-child {
+        @include screen-sm {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.books-1__address-item {
+    background-color: $color-secondary;
+    border-radius: 20px;
+    color: $color-gray-dark;
+    flex: 1;
+    font-family: $font-secondary;
+    font-size: 2.4rem;
+    line-height: 1.5625;
+    padding: $unit-sm $unit-xs;
+    text-align: center;
+    min-width: 300px;
+
+    @include screen-md {
+        font-size: 3.15vw;
+        min-width: 180px;
+    }
+
+    @include screen-sm {
+        font-size: 2.2rem;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 300px;
+        width: 300px;
+    }
+
+    &:nth-child(1) {
+        margin-right: $unit-sm;
+
+        @include screen-md {
+            margin-right: $unit-xs;
+        }
+
+        @include screen-sm {
+            margin-right: auto;
+        }
+    }
+
+    &:nth-child(2) {
+        margin-left: $unit-sm;
+
+        @include screen-md {
+            margin-left: $unit-xs;
+        }
+
+        @include screen-sm {
+            margin-left: auto;
+            margin-top: $unit-sm;
+        }
+    }
+}

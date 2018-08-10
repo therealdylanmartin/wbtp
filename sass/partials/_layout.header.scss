@@ -1,18 +1,12 @@
 .header {
     background-color: $color-primary;
-    position: fixed;
     width: 100%;
     width: 100vw;
     z-index: 4;
 
-    @include screen-md {
-        position: static;
-    }
-
     @include screen-xs {
         background-color: #fff;
     }
-
 
     h1 {
         opacity: 0;
@@ -80,7 +74,6 @@
                     width: 50%;
                 }
 
-
                 @include screen-xs {
                     width: 100%;
                     float: none;
@@ -90,7 +83,6 @@
                     @include screen-sm {
                         border-right: solid #fff 2px;
                     }
-
 
                     @include screen-xs {
                         border-right: none;
@@ -112,7 +104,6 @@
                     @include screen-md {
                         padding: $unit-xs;
                     }
-
 
                     @include screen-sm {
                         border-right: none;

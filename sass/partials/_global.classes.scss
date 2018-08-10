@@ -7,17 +7,18 @@
 
     h2 {
         font-size: 4.6rem;
+        line-height: 1;
         text-align: center;
     }
 
     hr {
         border: solid $color-primary 1.5px;
-        margin: 0 auto $unit-sm;
+        margin: 6px auto $unit-sm;
         max-width: 400px;
     }
 }
 
-.section-copy__subtext-1 {
+.subtext {
     color: $color-gray-dark;
     font-family: $font-primary;
     font-size: 5.4rem;
@@ -39,5 +40,39 @@
         color: $color-primary;
         font-style: normal;
         font-weight: 700;
+    }
+}
+
+.more-info {
+    max-width: 550px;
+    margin: $unit-md auto 0;
+
+    h4 {
+        background-color: $color-primary;
+        color: #fff;
+        font-size: 3.8rem;
+        font-weight: 500;
+        padding: $unit-sm 0;
+        text-align: center;
+
+        @include screen-xs {
+            font-size: 3.2rem;
+        }
+    }
+
+    h5 {
+        border: solid $color-primary 2px;
+        color: $color-gray-dark;
+        font-size: 2.1rem;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 1.5625;
+        padding: $unit-sm $unit-md;
+        text-align: center;
+
+        @include screen-xs {
+            font-size: 1.8rem;
+            padding: $unit-sm;
+        }
     }
 }

@@ -1,0 +1,83 @@
+.books-2 {
+    padding-bottom: $unit-sm;
+
+    @include screen-xs {
+        padding-bottom: calc(#{$unit-xs} + 5px);
+    }
+}
+
+.books-2__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-evenly;
+    text-decoration: none;
+
+    @include screen-xl {
+        height: 315px;
+    }
+
+    @include screen-lg {
+        height: 260px;
+    }
+
+    @include screen-xs {
+        height: 240px;
+    }
+
+    a {
+        align-items: center;
+        background-color: $color-primary;
+        border: solid $color-primary 1.5px;
+        border-radius: 27px;
+        color: #fff;
+        display: flex;
+        font-family: $font-primary;
+        font-size: 3.6rem;
+        font-weight: 500;
+        height: 54px;
+        justify-content: center;
+        line-height: 1;
+        padding: 0 $unit-md;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color .3s ease-in-out, color .3s ease-in;
+        z-index: 2;
+
+        @include screen-xs {
+            border-radius: 23px;
+            font-size: 2.8rem;
+            height: 46px;
+            padding: 0 calc(#{$unit-sm} + 10px);
+        }
+
+        &:hover,
+        &:active {
+            background-color: rgba(255,255,255,0);
+            color: $color-primary;
+        }
+    }
+}
+
+.books-2__icon {
+    svg {
+        position: relative;
+        width: 160px;
+        z-index: 2;
+
+        @include screen-xl {
+            width: 180px;
+        }
+
+        @include screen-lg {
+            width: 156px;
+        }
+    }
+}
+
+.money__03 {
+    fill: $color-primary;
+}
