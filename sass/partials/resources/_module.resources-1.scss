@@ -1,0 +1,132 @@
+.resources-1 {
+    background-color: $color-primary;
+    margin-left: -$unit-sm;
+    padding: $unit-lg $unit-sm;
+    width: 100%;
+    width: 100vw;
+
+    @include screen-sm {
+        padding: $unit-lg $unit-xs;
+    }
+
+    @include screen-xs {
+        margin-left: -$unit-xs;
+    }
+}
+
+.resources-1__content {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    h2 {
+        background-color: #fff;
+        font-size: 4.2rem;
+        font-style: italic;
+        font-variant: initial;
+        font-weight: 500;
+        padding: calc(#{$unit-sm} + 5px) $unit-xs;
+        text-align: center;
+
+        @include screen-sm {
+            background-color: transparent;
+            color: #fff;
+            padding-top: 0;
+        }
+    }
+}
+
+.resources-1__composition {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+
+    @include screen-sm {
+        display: block;
+        margin-right: 0;
+    }
+}
+
+.resources-1__item {
+    border: solid #fff 3px;
+    flex: 1;
+    margin-right: calc(#{$unit-xs} + 5px);
+    margin-top: calc(#{$unit-xs} + 5px);
+    padding: $unit-sm;
+    min-width: 260px;
+
+    @include screen-sm {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: calc(#{$unit-xs} + 5px);
+        max-width: 380px;
+    }
+
+    h4 {
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    p {
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: $unit-xs;
+        margin-top: $unit-xs;
+        text-align: center;
+
+        @include screen-xl {
+            font-size: 1.6rem;
+        }
+
+        @include screen-sm {
+            margin-bottom: calc(#{$unit-xs} + 5px);
+            margin-top: calc(#{$unit-xs} + 5px);
+        }
+    }
+
+    a {
+        align-items: center;
+        background-color: #fff;
+        border: solid #fff 1.5px;
+        border-radius: 21px;
+        color: $color-primary;
+        display: flex;
+        font-family: $font-primary;
+        font-size: 2.4rem;
+        font-weight: 500;
+        min-height: 42px;
+        justify-content: center;
+        line-height: 1;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color .3s ease-in-out, color .3s ease-in;
+        width: 100%;
+        max-width: 280px;
+
+        &:hover,
+        &:active {
+            background-color: rgba(255,255,255,0);
+            color: #fff;
+        }
+    }
+}
+
+.resources-1__location {
+    background-color: $color-overlay;
+    border-radius: 20px;
+    color: $color-gray-dark;
+    font-family: $font-secondary;
+    font-size: 2rem;
+    line-height: 1.5625;
+    margin: $unit-xs auto 0;
+    padding: calc(#{$unit-sm} - 5px) $unit-xs;
+    text-align: center;
+    max-width: 240px;
+
+    @include screen-sm {
+        margin-top: calc(#{$unit-xs} + 2px);
+    }
+}

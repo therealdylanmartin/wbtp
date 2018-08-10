@@ -114,12 +114,7 @@
 
             @include screen-sm {
                 background-color: transparent;
-                font-style: normal;
             }
-        }
-
-        &:active {
-            font-style: italic;
         }
     }
 }
@@ -197,12 +192,6 @@ a.donate-1__mask:hover ~ a,
 a.donate-1__mask:active ~ a {
     @include screen-sm {
         color: $color-primary;
-    }
-}
-
-a.donate-1__mask:active ~ a {
-    @include screen-sm {
-        font-style: italic;
     }
 }
 

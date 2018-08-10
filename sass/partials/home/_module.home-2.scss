@@ -52,12 +52,6 @@
             }
         }
 
-        &:active {
-            h2 {
-                font-style: italic;
-            }
-        }
-
         &:nth-child(1),
         &:nth-child(2) {
             border-bottom: solid #fff 1px;
@@ -141,9 +135,14 @@
     fill:#FFFFFF;
     transition:fill .3s ease-in
 }
+
 .home-2__content a:hover .money__01, .home-2__content a:active .money__01,
 .home-2__content a:hover .book__01, .home-2__content a:active .book__01,
 .home-2__content a:hover .contact__01, .home-2__content a:active .contact__01,
-.home-2__content a:hover .laptop__01, .home-2__content a:active .laptop__01 {
+.home-2__content a:hover .laptop__01, .home-2__content a:active .laptop__01,
+.home-2__content a:active .money__01, .home-2__content a:active .money__01,
+.home-2__content a:active .book__01, .home-2__content a:active .book__01,
+.home-2__content a:active .contact__01, .home-2__content a:active .contact__01,
+.home-2__content a:active .laptop__01, .home-2__content a:active .laptop__01 {
     fill:#15B6B8
 }
