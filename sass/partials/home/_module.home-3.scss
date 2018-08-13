@@ -1,0 +1,123 @@
+.home-3 {
+    padding: $unit-lg 0;
+
+    h2 {
+        font-size: 4.6rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    hr {
+        border: solid $color-primary 1.5px;
+        margin: 6px auto $unit-sm;
+        max-width: 400px;
+    }
+}
+
+.home-3__item {
+    border: solid $color-primary 3px;
+    margin: $unit-md auto 0;
+    padding: $unit-sm;
+    max-width: 640px;
+
+    @include screen-xs {
+        border: none;
+        padding: 0;
+    }
+
+    picture {
+        width: 100%;
+
+        img {
+            width: 100%;
+
+            @include screen-xs {
+                margin-left: -$unit-xs;
+                width: 100vw;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+
+        @include screen-xs {
+            border: solid $color-gray-dark 3px;
+            padding: $unit-xs;
+        }
+    }
+}
+
+.home-3__headings {
+    margin-top: 4px;
+    @include clearfix;
+
+    @include screen-sm {
+        margin-top: 0;
+    }
+
+    h4 {
+        float: left;
+        font-size: 3.2rem;
+
+        @include screen-md {
+            font-size: 2.8rem;
+        }
+
+        @include screen-sm {
+            display: block;
+            float: none;
+            font-size: 3.2rem;
+            margin-top: $unit-xs;
+            text-align: center;
+        }
+    }
+    h5 {
+        float: right;
+        font-size: 3.2rem;
+        font-style: italic;
+        font-weight: 400;
+
+        @include screen-md {
+            font-size: 2.8rem;
+        }
+
+        @include screen-sm {
+            display: block;
+            float: none;
+            text-align: center;
+        }
+
+        span {
+            &:first-child {
+                font-style: normal;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                font-variant: small-caps;
+            }
+        }
+    }
+}
+
+.home-3__location {
+    background-color: $color-secondary;
+    border-radius: 20px;
+    color: $color-gray-dark;
+    font-family: $font-secondary;
+    font-size: 2.3rem;
+    line-height: 1.5625;
+    margin: $unit-sm auto;
+    padding: $unit-sm $unit-xs;
+    text-align: center;
+    max-width: 320px;
+
+    @include screen-sm {
+        margin-top: calc(#{$unit-xs} + 2px);
+    }
+
+    @include screen-xs {
+        font-size: 2.1rem;
+        max-width: 284px;
+    }
+}

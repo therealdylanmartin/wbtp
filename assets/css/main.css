@@ -488,6 +488,100 @@ strong {
 .home-2__content a:active .laptop__01, .home-2__content a:active .laptop__01 {
   fill: #15B6B8; }
 
+.home-3 {
+  padding: 80px 0; }
+  .home-3 h2 {
+    font-size: 4.6rem;
+    line-height: 1;
+    text-align: center; }
+  .home-3 hr {
+    border: solid #15B6B8 1.5px;
+    margin: 6px auto 20px;
+    max-width: 400px; }
+
+.home-3__item {
+  border: solid #15B6B8 3px;
+  margin: 40px auto 0;
+  padding: 20px;
+  max-width: 640px; }
+  @media only screen and (max-width: 26.25em) {
+    .home-3__item {
+      border: none;
+      padding: 0; } }
+  .home-3__item picture {
+    width: 100%; }
+    .home-3__item picture img {
+      width: 100%; }
+      @media only screen and (max-width: 26.25em) {
+        .home-3__item picture img {
+          margin-left: -10px;
+          width: 100vw; } }
+  .home-3__item p {
+    margin-bottom: 0; }
+    @media only screen and (max-width: 26.25em) {
+      .home-3__item p {
+        border: solid #111 3px;
+        padding: 10px; } }
+
+.home-3__headings {
+  margin-top: 4px; }
+  .home-3__headings::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media only screen and (max-width: 36.25em) {
+    .home-3__headings {
+      margin-top: 0; } }
+  .home-3__headings h4 {
+    float: left;
+    font-size: 3.2rem; }
+    @media only screen and (max-width: 52.5em) {
+      .home-3__headings h4 {
+        font-size: 2.8rem; } }
+    @media only screen and (max-width: 36.25em) {
+      .home-3__headings h4 {
+        display: block;
+        float: none;
+        font-size: 3.2rem;
+        margin-top: 10px;
+        text-align: center; } }
+  .home-3__headings h5 {
+    float: right;
+    font-size: 3.2rem;
+    font-style: italic;
+    font-weight: 400; }
+    @media only screen and (max-width: 52.5em) {
+      .home-3__headings h5 {
+        font-size: 2.8rem; } }
+    @media only screen and (max-width: 36.25em) {
+      .home-3__headings h5 {
+        display: block;
+        float: none;
+        text-align: center; } }
+    .home-3__headings h5 span:first-child {
+      font-style: normal; }
+    .home-3__headings h5 span:nth-child(2), .home-3__headings h5 span:nth-child(3) {
+      font-variant: small-caps; }
+
+.home-3__location {
+  background-color: #B1E5E5;
+  border-radius: 20px;
+  color: #111;
+  font-family: "Lusitana", serif;
+  font-size: 2.3rem;
+  line-height: 1.5625;
+  margin: 20px auto;
+  padding: 20px 10px;
+  text-align: center;
+  max-width: 320px; }
+  @media only screen and (max-width: 36.25em) {
+    .home-3__location {
+      margin-top: calc(10px + 2px); } }
+  @media only screen and (max-width: 26.25em) {
+    .home-3__location {
+      font-size: 2.1rem;
+      max-width: 284px; } }
+
 .resources-1 {
   background-color: #15B6B8;
   margin-left: -20px;
@@ -1152,6 +1246,9 @@ a.donate-1__mask {
     .contact-1__address h4,
     .contact-1__address p {
       font-size: 1.6rem; } }
+  .contact-1__address h4 span,
+  .contact-1__address p span {
+    font-variant: small-caps; }
 
 .contact-1__address h4 {
   font-style: italic;

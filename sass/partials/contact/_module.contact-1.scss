@@ -136,6 +136,10 @@
         @include screen-xs {
             font-size: $font-size-default;
         }
+
+        span {
+            font-variant: small-caps;
+        }
     }
 
     h4 {
