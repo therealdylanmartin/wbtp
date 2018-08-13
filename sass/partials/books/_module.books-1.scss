@@ -25,7 +25,7 @@
 
     @include screen-sm {
         background-color: transparent;
-        padding: $unit-sm 0;
+        padding: 0 0 $unit-sm;
     }
 
     h2 {

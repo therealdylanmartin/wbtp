@@ -1,21 +1,22 @@
-@import "partials/global.variables.scss";
-@import "partials/global.mixins.scss";
-@import "partials/global.tags.scss";
+@import "partials/global.variables.scss"; // SASS variables 
+@import "partials/global.mixins.scss"; // SASS mixins
+@import "partials/global.tags.scss"; // Global tags
 
-@import "partials/layout.header.scss";
-@import "partials/layout.mobile-nav.scss";
+@import "partials/layout.header.scss"; // Header section
 
-@import "partials/global.classes.scss";
+@import "partials/global.classes.scss"; // Global elements
 
-@import "partials/home/module.home-1.scss";
+@import "partials/home/module.home-1.scss"; // Home pages
 @import "partials/home/module.home-2.scss";
 
-@import "partials/resources/module.resources-1.scss";
+@import "partials/resources/module.resources-1.scss"; // Resources pages
 @import "partials/resources/module.resources-2.scss";
 
-@import "partials/donate/module.donate-1.scss";
-
+@import "partials/donate/module.donate-1.scss"; // Donate pages
 @import "partials/books/module.books-1.scss";
 @import "partials/books/module.books-2.scss";
 
-@import "partials/layout.footer.scss"
+@import "partials/contact/module.contact-1.scss"; // Contact pages
+@import "partials/contact/module.contact-2.scss";
+
+@import "partials/layout.footer.scss" // Footer pages

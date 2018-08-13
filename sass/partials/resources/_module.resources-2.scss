@@ -75,10 +75,10 @@
 
     a {
         align-items: center;
-        background-color: rgba(255,255,255,0);
+        background-color: $color-primary;
         border: solid $color-primary 1.5px;
         border-radius: 21px;
-        color: $color-primary;
+        color: #fff;
         display: flex;
         font-family: $font-primary;
         font-size: 2.4rem;
@@ -97,16 +97,15 @@
 
         &:hover,
         &:active {
-            background-color: $color-primary;
-            color: #fff;
+            background-color: rgba(255,255,255,0);
+            color: $color-primary;
         }
     }
 }
 
 .resources-2__location {
-    background-color: $color-primary;
+    background-color: $color-secondary;
     border-radius: 20px;
-    color: #fff;
     font-family: $font-secondary;
     font-size: 2rem;
     line-height: 1.5625;

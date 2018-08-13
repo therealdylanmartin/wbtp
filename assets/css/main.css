@@ -46,13 +46,14 @@ h1 {
 
 h2,
 h3 {
+  color: #15B6B8;
   font-variant: small-caps; }
 
 h2,
 h3,
 h4,
-h5 {
-  color: #15B6B8;
+h5,
+h6 {
   font-family: "Fira Sans", sans-serif; }
 
 img {
@@ -79,9 +80,6 @@ p {
   margin-left: auto;
   margin-right: auto;
   max-width: 515px; }
-  @media only screen and (min-width: 68.75em) {
-    p {
-      font-size: 1.7rem; } }
   @media only screen and (max-width: 52.5em) {
     p {
       margin-bottom: calc(20px + 10px); } }
@@ -279,6 +277,18 @@ strong {
     border: solid #15B6B8 1.5px;
     margin: 6px auto 20px;
     max-width: 400px; }
+
+.section-copy--large p {
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 1.65;
+  text-align: center;
+  max-width: 545px; }
+  @media only screen and (max-width: 36.25em) {
+    .section-copy--large p {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      max-width: 465px; } }
 
 .subtext {
   color: #111;
@@ -649,10 +659,10 @@ strong {
         margin-top: calc(10px + 5px); } }
   .resources-2__item a {
     align-items: center;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #15B6B8;
     border: solid #15B6B8 1.5px;
     border-radius: 21px;
-    color: #15B6B8;
+    color: #fff;
     display: flex;
     font-family: "Fira Sans", sans-serif;
     font-size: 2.4rem;
@@ -669,13 +679,12 @@ strong {
     width: 100%;
     max-width: 280px; }
     .resources-2__item a:hover, .resources-2__item a:active {
-      background-color: #15B6B8;
-      color: #fff; }
+      background-color: rgba(255, 255, 255, 0);
+      color: #15B6B8; }
 
 .resources-2__location {
-  background-color: #15B6B8;
+  background-color: #B1E5E5;
   border-radius: 20px;
-  color: #fff;
   font-family: "Lusitana", serif;
   font-size: 2rem;
   line-height: 1.5625;
@@ -874,7 +883,7 @@ a.donate-1__mask {
   @media only screen and (max-width: 36.25em) {
     .books-1__composition-1 {
       background-color: transparent;
-      padding: 20px 0; } }
+      padding: 0 0 20px; } }
   .books-1__composition-1 h2 {
     font-size: 4.6rem;
     line-height: 1;
@@ -977,24 +986,18 @@ a.donate-1__mask {
         margin-top: 20px; } }
 
 .books-2 {
-  padding-bottom: 20px; }
-  @media only screen and (max-width: 26.25em) {
-    .books-2 {
-      padding-bottom: calc(10px + 5px); } }
+  padding: 20px 0 40px; }
 
 .books-2__content {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 260px;
   justify-content: space-evenly;
   text-decoration: none; }
   @media only screen and (min-width: 68.75em) {
     .books-2__content {
-      height: 315px; } }
-  @media only screen and (max-width: 61.25em) {
-    .books-2__content {
-      height: 260px; } }
+      height: 270px; } }
   @media only screen and (max-width: 26.25em) {
     .books-2__content {
       height: 240px; } }
@@ -1020,10 +1023,7 @@ a.donate-1__mask {
     z-index: 2; }
     @media only screen and (max-width: 26.25em) {
       .books-2__content a {
-        border-radius: 23px;
-        font-size: 2.8rem;
-        height: 46px;
-        padding: 0 calc(20px + 10px); } }
+        font-size: 2.8rem; } }
     .books-2__content a:hover, .books-2__content a:active {
       background-color: rgba(255, 255, 255, 0);
       color: #15B6B8; }
@@ -1041,6 +1041,171 @@ a.donate-1__mask {
 
 .money__03 {
   fill: #15B6B8; }
+
+.contact-1 {
+  background-color: #15B6B8;
+  margin-left: -20px;
+  padding: 80px 20px;
+  width: 100%;
+  width: 100vw; }
+  @media only screen and (max-width: 36.25em) {
+    .contact-1 {
+      padding: 80px 10px; } }
+  @media only screen and (max-width: 26.25em) {
+    .contact-1 {
+      margin-left: -10px;
+      padding: 80px 0; } }
+
+.contact-1__content {
+  margin: 0 auto;
+  max-width: 846px; }
+
+.contact-1__composition-1 {
+  border: solid #fff 2px;
+  padding: 20px; }
+  @media only screen and (max-width: 36.25em) {
+    .contact-1__composition-1 {
+      border: none;
+      padding: 0 0 40px; } }
+  @media only screen and (max-width: 26.25em) {
+    .contact-1__composition-1 {
+      padding: 0 10px 40px; } }
+  .contact-1__composition-1 h2 {
+    color: #fff;
+    font-size: 4.6rem;
+    line-height: 1;
+    text-align: center; }
+  .contact-1__composition-1 hr {
+    border: solid #fff 1.5px;
+    margin: 10px auto;
+    max-width: 400px; }
+  .contact-1__composition-1 h5 {
+    color: #fff;
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5625;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 420px; }
+    @media only screen and (max-width: 36.25em) {
+      .contact-1__composition-1 h5 {
+        max-width: 340px; } }
+    @media only screen and (max-width: 26.25em) {
+      .contact-1__composition-1 h5 {
+        font-size: 1.8rem; } }
+    .contact-1__composition-1 h5 a {
+      color: #fff; }
+
+.contact-1__composition-2 {
+  border: solid #fff 2px;
+  border-top: none;
+  display: flex;
+  width: 100%; }
+  @media only screen and (max-width: 36.25em) {
+    .contact-1__composition-2 {
+      border-top: solid #fff 2px;
+      display: block;
+      margin: 0 auto;
+      max-width: 460px; } }
+  @media only screen and (max-width: 26.25em) {
+    .contact-1__composition-2 {
+      border: none; } }
+
+.contact-1__map {
+  border-right: solid #fff 1px;
+  height: 420px;
+  overflow: hidden;
+  width: 50%; }
+  @media only screen and (max-width: 36.25em) {
+    .contact-1__map {
+      border: none;
+      width: 100%; } }
+  @media only screen and (max-width: 26.25em) {
+    .contact-1__map {
+      height: 360px; } }
+  .contact-1__map iframe {
+    height: 100%;
+    width: 100%; }
+
+.contact-1__contact {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.64);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 50%; }
+  @media only screen and (max-width: 36.25em) {
+    .contact-1__contact {
+      border: none;
+      min-height: 280px;
+      padding: 0;
+      width: 100%; } }
+  @media only screen and (max-width: 26.25em) {
+    .contact-1__contact {
+      min-height: 320px; } }
+
+.contact-1__address h4,
+.contact-1__address p {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  text-align: center; }
+  @media only screen and (max-width: 26.25em) {
+    .contact-1__address h4,
+    .contact-1__address p {
+      font-size: 1.6rem; } }
+
+.contact-1__address h4 {
+  font-style: italic;
+  font-weight: 500; }
+
+.contact-1__email-and-directions a {
+  display: inline-block;
+  text-decoration: none; }
+  .contact-1__email-and-directions a:first-child {
+    margin-right: 10px; }
+  .contact-1__email-and-directions a:nth-child(2) {
+    margin-left: 10px; }
+  .contact-1__email-and-directions a h6 {
+    color: #111;
+    font-size: 1.4rem;
+    margin-top: 3px;
+    text-align: center;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 26.25em) {
+      .contact-1__email-and-directions a h6 {
+        font-size: 1.2rem; } }
+
+.contact-1__icon {
+  align-items: center;
+  background-color: #15B6B8;
+  border-radius: 50%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  transition: all .4s ease-out;
+  width: 80px; }
+  @media only screen and (max-width: 26.25em) {
+    .contact-1__icon {
+      height: 60px;
+      width: 60px; } }
+  .contact-1__icon svg {
+    height: 60px; }
+    @media only screen and (max-width: 26.25em) {
+      .contact-1__icon svg {
+        height: 45px; } }
+    .contact-1__icon svg .email__01,
+    .contact-1__icon svg .location__01 {
+      fill: #fff;
+      transition: fill .4s ease-in; }
+
+.contact-1__email-and-directions a:hover > .contact-1__icon {
+  background-color: transparent;
+  transform: scale(1.15); }
+  .contact-1__email-and-directions a:hover > .contact-1__icon svg .email__01,
+  .contact-1__email-and-directions a:hover > .contact-1__icon svg .location__01 {
+    fill: #111; }
 
 .footer {
   background-color: #595854;
