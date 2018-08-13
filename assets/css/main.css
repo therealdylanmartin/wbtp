@@ -1048,38 +1048,35 @@ a.donate-1__mask {
   padding: 80px 20px;
   width: 100%;
   width: 100vw; }
-  @media only screen and (max-width: 36.25em) {
-    .contact-1 {
-      padding: 80px 10px; } }
   @media only screen and (max-width: 26.25em) {
     .contact-1 {
       margin-left: -10px;
-      padding: 80px 0; } }
+      padding: 80px 0 0; } }
 
 .contact-1__content {
   margin: 0 auto;
   max-width: 846px; }
 
-.contact-1__composition-1 {
+.contact-1__header {
   border: solid #fff 2px;
   padding: 20px; }
   @media only screen and (max-width: 36.25em) {
-    .contact-1__composition-1 {
+    .contact-1__header {
       border: none;
       padding: 0 0 40px; } }
   @media only screen and (max-width: 26.25em) {
-    .contact-1__composition-1 {
+    .contact-1__header {
       padding: 0 10px 40px; } }
-  .contact-1__composition-1 h2 {
+  .contact-1__header h2 {
     color: #fff;
     font-size: 4.6rem;
     line-height: 1;
     text-align: center; }
-  .contact-1__composition-1 hr {
+  .contact-1__header hr {
     border: solid #fff 1.5px;
     margin: 10px auto;
     max-width: 400px; }
-  .contact-1__composition-1 h5 {
+  .contact-1__header h5 {
     color: #fff;
     font-size: 2.1rem;
     font-style: italic;
@@ -1089,27 +1086,27 @@ a.donate-1__mask {
     text-align: center;
     max-width: 420px; }
     @media only screen and (max-width: 36.25em) {
-      .contact-1__composition-1 h5 {
+      .contact-1__header h5 {
         max-width: 340px; } }
     @media only screen and (max-width: 26.25em) {
-      .contact-1__composition-1 h5 {
+      .contact-1__header h5 {
         font-size: 1.8rem; } }
-    .contact-1__composition-1 h5 a {
+    .contact-1__header h5 a {
       color: #fff; }
 
-.contact-1__composition-2 {
+.contact-1__composition {
   border: solid #fff 2px;
   border-top: none;
   display: flex;
   width: 100%; }
   @media only screen and (max-width: 36.25em) {
-    .contact-1__composition-2 {
+    .contact-1__composition {
       border-top: solid #fff 2px;
       display: block;
       margin: 0 auto;
       max-width: 460px; } }
   @media only screen and (max-width: 26.25em) {
-    .contact-1__composition-2 {
+    .contact-1__composition {
       border: none; } }
 
 .contact-1__map {
@@ -1166,6 +1163,7 @@ a.donate-1__mask {
   .contact-1__email-and-directions a:first-child {
     margin-right: 10px; }
   .contact-1__email-and-directions a:nth-child(2) {
+    cursor: pointer;
     margin-left: 10px; }
   .contact-1__email-and-directions a h6 {
     color: #111;
@@ -1194,18 +1192,125 @@ a.donate-1__mask {
     height: 60px; }
     @media only screen and (max-width: 26.25em) {
       .contact-1__icon svg {
-        height: 45px; } }
+        height: 46px; } }
     .contact-1__icon svg .email__01,
     .contact-1__icon svg .location__01 {
       fill: #fff;
+      margin: 0 auto;
       transition: fill .4s ease-in; }
 
-.contact-1__email-and-directions a:hover > .contact-1__icon {
+.contact-1__email-and-directions a:hover .contact-1__icon {
   background-color: transparent;
   transform: scale(1.15); }
-  .contact-1__email-and-directions a:hover > .contact-1__icon svg .email__01,
-  .contact-1__email-and-directions a:hover > .contact-1__icon svg .location__01 {
+  .contact-1__email-and-directions a:hover .contact-1__icon svg .email__01,
+  .contact-1__email-and-directions a:hover .contact-1__icon svg .location__01 {
     fill: #111; }
+
+.contact-2 {
+  padding: 80px 0; }
+  @media only screen and (max-width: 26.25em) {
+    .contact-2 {
+      padding: 0; } }
+
+.contact-2__composition {
+  background-color: #15B6B8;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 520px; }
+  @media only screen and (max-width: 36.25em) {
+    .contact-2__composition {
+      padding: 20px; } }
+  @media only screen and (max-width: 26.25em) {
+    .contact-2__composition {
+      margin-left: -10px;
+      padding: 80px 10px;
+      width: 100%;
+      width: 100vw; } }
+  .contact-2__composition form {
+    width: 100%; }
+    .contact-2__composition form fieldset {
+      border: none; }
+      .contact-2__composition form fieldset legend {
+        display: none; }
+      .contact-2__composition form fieldset input,
+      .contact-2__composition form fieldset select,
+      .contact-2__composition form fieldset textarea {
+        border: solid #B1E5E5 2px;
+        border-radius: 5px;
+        color: #111;
+        display: block;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        width: 100%; }
+        .contact-2__composition form fieldset input::placeholder,
+        .contact-2__composition form fieldset select::placeholder,
+        .contact-2__composition form fieldset textarea::placeholder {
+          color: #777; }
+      .contact-2__composition form fieldset input,
+      .contact-2__composition form fieldset select {
+        height: 46px; }
+      .contact-2__composition form fieldset textarea {
+        padding: 10px; }
+      .contact-2__composition form fieldset input.contact-2__submit {
+        align-items: center;
+        background-color: #fff;
+        border: solid #fff 1.5px;
+        border-radius: 21px;
+        color: #15B6B8;
+        cursor: pointer;
+        display: flex;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 2.4rem;
+        font-weight: 500;
+        min-height: 42px;
+        justify-content: center;
+        line-height: 1;
+        margin-bottom: 0;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color .3s ease-in-out, color .3s ease-in;
+        width: 100%;
+        max-width: 280px; }
+        .contact-2__composition form fieldset input.contact-2__submit:hover, .contact-2__composition form fieldset input.contact-2__submit:active {
+          background-color: rgba(255, 255, 255, 0);
+          color: #fff; }
+        @media only screen and (max-width: 26.25em) {
+          .contact-2__composition form fieldset input.contact-2__submit {
+            max-width: 100%; } }
+
+.contact-2__header {
+  padding: 0 0 20px; }
+  @media only screen and (max-width: 26.25em) {
+    .contact-2__header {
+      padding: 0 10px 20px; } }
+  .contact-2__header h2 {
+    color: #fff;
+    font-size: 4.6rem;
+    line-height: 1;
+    text-align: center; }
+  .contact-2__header hr {
+    border: solid #fff 1.5px;
+    margin: 10px auto;
+    max-width: 400px; }
+  .contact-2__header h5 {
+    color: #fff;
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5625;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 420px; }
+    @media only screen and (max-width: 36.25em) {
+      .contact-2__header h5 {
+        max-width: 340px; } }
+    @media only screen and (max-width: 26.25em) {
+      .contact-2__header h5 {
+        font-size: 1.8rem; } }
 
 .footer {
   background-color: #595854;
@@ -1357,6 +1462,7 @@ a.donate-1__mask {
     @media only screen and (max-width: 26.25em) {
       .footer__network p {
         font-size: 1.4rem;
+        margin-bottom: 40px;
         max-width: 260px; } }
 
 .footer__copyright p {

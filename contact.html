@@ -81,7 +81,7 @@
 
             <hr>
 
-            <p>Wisconsin Books to Prisoners (WBTP) meets every Wednesday from 3pm the 6pm to fulfill prisoner’s book requests. If you have interest in volunteering, please <a href="mailto:wisconsinbookstoprisoners@gmail.com">email us</a> or use the <a href="#contact-form">contact form</a> below.</p>
+            <p>Wisconsin Books to Prisoners (WBTP) meets every Wednesday from 3pm the 6pm to fulfill prisoner’s book requests. If you have interest in volunteering, please <a href="mailto:wisconsinbookstoprisoners@gmail.com">email us</a> or use the <a href="#contactForm">contact form</a> below.</p>
 
         </section>
 
@@ -89,13 +89,13 @@
 
             <div class="contact-1__content">
 
-                <div class="contact-1__composition-1">
+                <div class="contact-1__header">
                     <h2>Location</h2>
                     <hr>
                     <h5>WBTP is located in the basement of the <a href="http://socialjusticecenter.org/" target="_blank">Social Justice Center</a>.</h5>
                 </div>
 
-                <div class="contact-1__composition-2">
+                <div class="contact-1__composition">
 
                     <div class="contact-1__map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.998833162837!2d-89.36645638485548!3d43.083519879144944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806537721605473%3A0x3a3f70dd2f27a3d9!2sSocial+Justice+Center!5e0!3m2!1sen!2sus!4v1534182775527" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -141,7 +141,7 @@
                                 </div>
                                 <h6>Email Us</h6>
                             </a>
-                            <a href="http://maps.google.com">
+                            <a onclick="mapSelector()">
                                 <div class="contact-1__icon">
                                         <?xml version="1.0" encoding="utf-8"?>
                                         <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -212,7 +212,56 @@
 
         </section>
 
-        <section class="section contact-2">
+        <section class="section contact-2" id="contactForm">
+
+            <div class="contact-2__composition">
+
+                <div class="contact-2__header">
+                    <h2>Contact Form</h2>
+                    <hr>
+                    <h5>Use this form to reach out to WBTP for any reason. Fill in as many details as you can.</h5>
+                </div>
+
+                <form action="contact-wbtp.php" enctype="multipart/form-data" method="post">
+
+                    <fieldset>
+
+                        <legend>Contact Us</legend>
+
+                        <input type="text" id="contactFormName" value="" placeholder="Name" />
+
+                        <input type="email" id="contactFormEmail" value="" placeholder="Email" />
+
+                        <select id="contactFormReason">
+                            <option value="No option selected" selected="selected">
+                                Reason for contacting us
+                            </option>
+                            <option value="Volunteering">
+                                Volunteering
+                            </option>
+                            <option value="Host a book drive">
+                                Host a book drive
+                            </option>
+                            <option value="Special contribution">
+                                Special contribution
+                            </option>
+                            <option value="General inquiry">
+                                General inquiry
+                            </option>
+                            <option value="Other">
+                                Other
+                            </option>
+                        </select>
+
+                        <textarea id="contactFormMessage" rows="7" placeholder="Message and additional details"></textarea>
+
+                        <input class="contact-2__submit" type="submit" value="Contact Us" />
+                        
+                    </fieldset>
+
+                </form>
+
+            </div>
 
         </section>
 
@@ -279,7 +328,6 @@
     </footer>
 
     <script src="assets/js/main.js" type="text/javascript"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 
 </body>
 

@@ -5,13 +5,9 @@
     width: 100%;
     width: 100vw;
 
-    @include screen-sm {
-        padding: $unit-lg $unit-xs;
-    }
-
     @include screen-xs {
         margin-left: -$unit-xs;
-        padding: $unit-lg 0;
+        padding: $unit-lg 0 0;
     }
 }
 
@@ -20,7 +16,7 @@
     max-width: 846px;
 }
 
-.contact-1__composition-1 {
+.contact-1__header {
     border: solid #fff 2px;
     padding: $unit-sm;
 
@@ -70,7 +66,7 @@
     }
 }
 
-.contact-1__composition-2 {
+.contact-1__composition {
     border: solid #fff 2px;
     border-top: none;
     display: flex;
@@ -158,6 +154,7 @@
         }
 
         &:nth-child(2) {
+            cursor: pointer;
             margin-left: $unit-xs;
         }
 
@@ -194,18 +191,19 @@
         height: 60px;
 
         @include screen-xs {
-            height: 45px;
+            height: 46px;
         }
 
         .email__01,
         .location__01 {
             fill: #fff;
+            margin: 0 auto;
             transition: fill .4s ease-in;
         }
     }
 }
 
-.contact-1__email-and-directions a:hover > .contact-1__icon {
+.contact-1__email-and-directions a:hover .contact-1__icon {
     background-color: transparent;
     transform: scale(1.15);
 

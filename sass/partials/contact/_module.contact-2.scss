@@ -1,0 +1,136 @@
+.contact-2 {
+    padding: $unit-lg 0;
+
+    @include screen-xs {
+        padding: 0;
+    }
+}
+
+.contact-2__composition {
+    background-color: $color-primary;
+    margin: 0 auto;
+    padding: $unit-md;
+    max-width: 520px;
+
+    @include screen-sm {
+        padding: $unit-sm;
+    }
+
+    @include screen-xs {
+        margin-left: -$unit-xs;
+        padding: $unit-lg $unit-xs;
+        width: 100%;
+        width: 100vw;
+    }
+
+    form {
+        width: 100%;
+
+        fieldset {
+            border: none;
+
+            legend {
+                display: none;
+            }
+            input,
+            select,
+            textarea {
+                border: solid $color-secondary 2px;
+                border-radius: 5px;
+                color: $color-gray-dark;
+                display: block;
+                font-family: $font-primary;
+                font-size: 1.8rem;
+                margin-bottom: $unit-sm;
+                padding-left: $unit-xs;
+                width: 100%;
+
+                &::placeholder {
+                    color: $color-gray-light;
+                }
+            }
+            input,
+            select {
+                height: 46px;
+            }
+            textarea {
+                padding: $unit-xs
+            }
+            input {
+                &.contact-2__submit {
+                    align-items: center;
+                    background-color: #fff;
+                    border: solid #fff 1.5px;
+                    border-radius: 21px;
+                    color: $color-primary;
+                    cursor: pointer;
+                    display: flex;
+                    font-family: $font-primary;
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    min-height: 42px;
+                    justify-content: center;
+                    line-height: 1;
+                    margin-bottom: 0;
+                    position: relative;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: background-color .3s ease-in-out, color .3s ease-in;
+                    width: 100%;
+                    max-width: 280px;
+
+                    &:hover,
+                    &:active {
+                        background-color: rgba(255,255,255,0);
+                        color: #fff;
+                    }
+
+                    @include screen-xs {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact-2__header {
+    padding: 0 0 $unit-sm;
+
+    @include screen-xs {
+        padding: 0 $unit-xs $unit-sm;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 4.6rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    hr {
+        border: solid #fff 1.5px;
+        margin: $unit-xs auto;
+        max-width: 400px;
+    }
+
+    h5 {
+        color: #fff;
+        font-size: 2.1rem;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 1.5625;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 420px;
+
+        @include screen-sm {
+            max-width: 340px;
+        }
+
+        @include screen-xs {
+            font-size: 1.8rem;
+        }
+    }
+}

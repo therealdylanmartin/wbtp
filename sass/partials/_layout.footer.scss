@@ -194,6 +194,7 @@
 
         @include screen-xs {
             font-size: 1.4rem;
+            margin-bottom: $unit-md;
             max-width: 260px;
         }
     }
