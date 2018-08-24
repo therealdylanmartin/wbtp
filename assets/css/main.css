@@ -1222,6 +1222,7 @@ a.donate-1__mask {
 .contact-1__contact {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.64);
+  border-left: solid #fff 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1246,8 +1247,12 @@ a.donate-1__mask {
     .contact-1__address h4,
     .contact-1__address p {
       font-size: 1.6rem; } }
-  .contact-1__address h4 span,
-  .contact-1__address p span {
+  .contact-1__address h4 span:first-child,
+  .contact-1__address p span:first-child {
+    font-style: normal; }
+  .contact-1__address h4 span:nth-child(2), .contact-1__address h4 span:nth-child(3),
+  .contact-1__address p span:nth-child(2),
+  .contact-1__address p span:nth-child(3) {
     font-variant: small-caps; }
 
 .contact-1__address h4 {

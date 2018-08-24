@@ -108,6 +108,7 @@
 .contact-1__contact {
     align-items: center;
     background-color: $color-overlay;
+    border-left: solid #fff 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -138,7 +139,14 @@
         }
 
         span {
-            font-variant: small-caps;
+            &:first-child {
+                font-style: normal;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                font-variant: small-caps;
+            }
         }
     }
 
