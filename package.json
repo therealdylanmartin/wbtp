@@ -7,9 +7,9 @@
     "test": "test",
     "watch:sass": "node-sass sass/main.scss assets/css/main.css -w",
     "compile:sass": "node-sass sass/main.scss assets/css/main.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' assets/css/main.css -o assets/css/prefix/main.prefix.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' -o assets/css/prefix/main.prefix.css assets/css/main.css",
     "compress:css": "node-sass assets/css/prefix/main.prefix.css assets/css/min/main.min.css --output-style compressed",
-    "concat:css": "concat -o wordpress/wp-content/themes/wbtp/style.css wordpress/wp-content/themes/wbtp/css/theme-header.css assets/css/min/main.min.css",
+    "concat:css": "concat -o wordpress-theme/style.css wordpress-theme/css/theme-header.css assets/css/min/main.min.css",
     "build:css": "npm-run-all compile:sass prefix:css compress:css concat:css"
   },
   "keywords": [],

@@ -18,7 +18,7 @@
     border: solid $color-primary 3px;
     margin: $unit-md auto 0;
     padding: $unit-sm;
-    max-width: 640px;
+    max-width: 560px;
 
     @include screen-xs {
         border: none;
@@ -107,13 +107,13 @@
     font-family: $font-secondary;
     font-size: 2.3rem;
     line-height: 1.5625;
-    margin: $unit-sm auto;
+    margin: $unit-md auto;
     padding: $unit-sm $unit-xs;
     text-align: center;
     max-width: 320px;
 
     @include screen-sm {
-        margin-top: calc(#{$unit-xs} + 2px);
+        margin: calc(#{$unit-xs} + 2px) auto $unit-sm;
     }
 
     @include screen-xs {

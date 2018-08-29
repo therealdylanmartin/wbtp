@@ -27,6 +27,7 @@
 .resources-2__composition {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-right: -15px;
 
     @include screen-sm {
@@ -37,11 +38,15 @@
 
 .resources-2__item {
     border: solid $color-primary 3px;
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    justify-content: center;
     margin-right: calc(#{$unit-xs} + 5px);
     margin-top: calc(#{$unit-xs} + 5px);
     padding: $unit-sm;
-    min-width: 260px;
+    min-width: 280px;
+    max-width: 445px;
 
     @include screen-sm {
         margin-left: auto;
@@ -99,6 +104,10 @@
         &:active {
             background-color: rgba(255,255,255,0);
             color: $color-primary;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $unit-xs;
         }
     }
 }

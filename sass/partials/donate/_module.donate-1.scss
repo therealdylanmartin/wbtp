@@ -63,6 +63,13 @@
         }
     }
 
+    form input:nth-child(3) {
+        background-color: transparent;
+        cursor: pointer;
+        outline: 0;
+    }
+
+    form input:nth-child(3),
     a {
         align-items: center;
         border: solid #fff 1.5px;
@@ -99,7 +106,7 @@
             border-radius: 0;
             font-size: 6.25vw;
             padding: 0;
-            transition: background-color 0s ease-in-out, color .3s ease-in;
+            transition: background-color .3s ease-in-out, color .3s ease-in;
             width: 52vw;
         }
 
@@ -140,6 +147,7 @@
     }
 }
 
+form.donate-1__mask,
 a.donate-1__mask {
     display: none;
 
@@ -152,10 +160,23 @@ a.donate-1__mask {
         width: 100%;
         z-index: 3;
     }
+}
 
-    &:hover,
-    &:active {
-        background-color: transparent;
+form.donate-1__mask {
+    input {
+        &:nth-child(3) {
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;         
+        }
+
+        &:hover,
+        &:active {
+            background-color: transparent;
+        }
     }
 }
 
@@ -168,6 +189,7 @@ a.donate-1__mask {
         left: 0;
         position: absolute;
         top: 0;
+        transition: background-color .3s ease-in-out;
         width: 100%;
         z-index: 1;
     }
@@ -175,10 +197,11 @@ a.donate-1__mask {
 
 .money__02,
 .book__02 {
-    fill:#FFFFFF;
-    transition:fill .3s ease-in
+    fill: #FFFFFF;
+    transition: fill .3s ease-in;
 }
 
+form.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
 a.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
 a.donate-1__mask:hover ~ .donate-1__icon svg .book__02,
 a.donate-1__mask:active ~ .donate-1__icon svg .money__02,
@@ -188,6 +211,7 @@ a.donate-1__mask:active ~ .donate-1__icon svg .book__02 {
     }
 }
 
+form.donate-1__mask:hover ~ form input:nth-child(3),
 a.donate-1__mask:hover ~ a,
 a.donate-1__mask:active ~ a {
     @include screen-sm {
@@ -195,6 +219,7 @@ a.donate-1__mask:active ~ a {
     }
 }
 
+form.donate-1__mask:hover ~ .donate-1__hover,
 a.donate-1__mask:hover ~ .donate-1__hover,
 a.donate-1__mask:active ~ .donate-1__hover {
     @include screen-sm {

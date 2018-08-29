@@ -26,23 +26,6 @@
         transition: background-color .3s ease-in-out;
         width: 50%;
 
-        @include screen-xl {
-            height: 335px;
-        }
-
-        @include screen-lg {
-            height: 290px;
-        }
-
-        @include screen-sm {
-            flex-direction: row;
-            float: none;
-            height: auto;
-            justify-content: space-evenly;
-            padding: $unit-sm 0;
-            width: 100%;
-        }
-
         &:hover,
         &:active {
             background-color: $color-overlay;
@@ -52,7 +35,16 @@
             }
         }
 
-        &:nth-child(1),
+        &:first-child{
+            border-bottom: solid #fff 1px;
+            position: relative;
+
+            @include screen-sm {
+                border-bottom: none;
+                border-right: none;
+            }
+        }
+
         &:nth-child(2) {
             border-bottom: solid #fff 1px;
         }
@@ -70,18 +62,28 @@
             border-left: solid #fff 1px;
         }
 
-        &:first-child{
-            @include screen-sm {
-                border-bottom: none;
-                border-right: none;
-            }
-        }
-
         &:not(:first-child) {
             @include screen-sm {
                 border: none;
                 border-top: solid #fff 2px;
             }
+        }
+
+        @include screen-xl {
+            height: 335px;
+        }
+
+        @include screen-lg {
+            height: 290px;
+        }
+
+        @include screen-sm {
+            flex-direction: row;
+            float: none;
+            height: auto;
+            justify-content: space-evenly;
+            padding: $unit-sm 0;
+            width: 100%;
         }
 
         h2 {
@@ -105,6 +107,31 @@
 
             @include screen-xs {
                 font-size: 7.25vw;
+            }
+        }
+
+        form {
+            display: block;
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 3;
+        
+            input {
+                &:nth-child(3) {
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    display: block;
+                    height: 100%;
+                    left: 0;
+                    outline: 0;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;         
+                }
             }
         }
     }
