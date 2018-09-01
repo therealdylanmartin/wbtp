@@ -27,7 +27,7 @@
         width: 50%;
 
         &:hover,
-        &:active {
+        &:focus {
             background-color: $color-overlay;
 
             h2 {
@@ -127,7 +127,6 @@
                     display: block;
                     height: 100%;
                     left: 0;
-                    outline: 0;
                     position: absolute;
                     top: 0;
                     width: 100%;         
@@ -150,7 +149,7 @@
         }
 
         @include screen-sm {
-            width: 28vw
+            width: 28vw;
         }
     }
 }
@@ -159,17 +158,17 @@
 .book__01,
 .contact__01,
 .laptop__01 {
-    fill:#FFFFFF;
-    transition:fill .3s ease-in
+    fill: #fff;
+    transition: fill .3s ease-in;
 }
 
-.home-2__content a:hover .money__01, .home-2__content a:active .money__01,
-.home-2__content a:hover .book__01, .home-2__content a:active .book__01,
-.home-2__content a:hover .contact__01, .home-2__content a:active .contact__01,
-.home-2__content a:hover .laptop__01, .home-2__content a:active .laptop__01,
-.home-2__content a:active .money__01, .home-2__content a:active .money__01,
-.home-2__content a:active .book__01, .home-2__content a:active .book__01,
-.home-2__content a:active .contact__01, .home-2__content a:active .contact__01,
-.home-2__content a:active .laptop__01, .home-2__content a:active .laptop__01 {
-    fill:#15B6B8
+.home-2__content a:hover .money__01,
+.home-2__content a:hover .book__01,
+.home-2__content a:hover .contact__01,
+.home-2__content a:hover .laptop__01,
+.home-2__content a:focus .money__01,
+.home-2__content a:focus .book__01,
+.home-2__content a:focus .contact__01,
+.home-2__content a:focus .laptop__01 {
+    fill: $color-primary;
 }

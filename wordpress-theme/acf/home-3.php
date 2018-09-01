@@ -34,7 +34,7 @@
                     </picture>
                     <div class="home-3__headings">
                         <h4><?= $event ?></h4>
-                        <h5><?= $date; ?> <span>|</span> <span><?= $startTime; ?></span> - <span><?= $endTime; ?></span></h5>
+                        <h5><?= $date; ?> <span>|</span> <span><?= $startTime; ?></span><?php if ($endTime): ?> - <span><?= $endTime; ?></span><?php endif; ?></h5>
                     </div>
                     <div class="home-3__location">
                         <?= $place; ?>

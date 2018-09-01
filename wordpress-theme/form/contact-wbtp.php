@@ -22,7 +22,7 @@
     $emailMessage .= "Message: ".clean_string($message)."\n";
  
     // create email headers
-    $headers = 'From: contactform'."\r\n".
+    $headers = 'From: websitecontactform'."\r\n".
     'Reply-To: '.$emailFrom."\r\n" .
     'X-Mailer: PHP/' . phpversion();
     @mail($emailTo, $emailSubject, $emailMessage, $headers);

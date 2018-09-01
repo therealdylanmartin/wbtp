@@ -25,7 +25,7 @@ body {
 
 a {
   background-color: transparent; }
-  a:hover, a:active {
+  a:hover, a:focus {
     text-decoration: none; }
 
 button,
@@ -180,10 +180,10 @@ strong {
           z-index: 2; }
           .header__content nav ul li a, .header__content nav ul li a:link, .header__content nav ul li a:visited {
             color: #fff; }
-          .header__content nav ul li a:hover, .header__content nav ul li a:active {
+          .header__content nav ul li a:hover, .header__content nav ul li a:focus {
             color: #15B6B8; }
             @media only screen and (max-width: 36.25em) {
-              .header__content nav ul li a:hover, .header__content nav ul li a:active {
+              .header__content nav ul li a:hover, .header__content nav ul li a:focus {
                 background-color: rgba(255, 255, 255, 0.64); } }
           @media only screen and (max-width: 52.5em) {
             .header__content nav ul li a {
@@ -264,7 +264,8 @@ strong {
     .header__mask {
       display: none; } }
 
-.header__content a:hover ~ .header__mask {
+.header__content a:hover ~ .header__mask,
+.header__content a:focus ~ .header__mask {
   background-color: rgba(255, 255, 255, 0.64);
   border-bottom-width: 8px; }
 
@@ -413,9 +414,9 @@ strong {
     text-decoration: none;
     transition: background-color .3s ease-in-out;
     width: 50%; }
-    .home-2__content a:hover, .home-2__content a:active {
+    .home-2__content a:hover, .home-2__content a:focus {
       background-color: rgba(255, 255, 255, 0.64); }
-      .home-2__content a:hover h2, .home-2__content a:active h2 {
+      .home-2__content a:hover h2, .home-2__content a:focus h2 {
         color: #15B6B8; }
     .home-2__content a:first-child {
       border-bottom: solid #fff 1px;
@@ -484,7 +485,6 @@ strong {
         display: block;
         height: 100%;
         left: 0;
-        outline: 0;
         position: absolute;
         top: 0;
         width: 100%; }
@@ -505,17 +505,17 @@ strong {
 .book__01,
 .contact__01,
 .laptop__01 {
-  fill: #FFFFFF;
+  fill: #fff;
   transition: fill .3s ease-in; }
 
-.home-2__content a:hover .money__01, .home-2__content a:active .money__01,
-.home-2__content a:hover .book__01, .home-2__content a:active .book__01,
-.home-2__content a:hover .contact__01, .home-2__content a:active .contact__01,
-.home-2__content a:hover .laptop__01, .home-2__content a:active .laptop__01,
-.home-2__content a:active .money__01, .home-2__content a:active .money__01,
-.home-2__content a:active .book__01, .home-2__content a:active .book__01,
-.home-2__content a:active .contact__01, .home-2__content a:active .contact__01,
-.home-2__content a:active .laptop__01, .home-2__content a:active .laptop__01 {
+.home-2__content a:hover .money__01,
+.home-2__content a:hover .book__01,
+.home-2__content a:hover .contact__01,
+.home-2__content a:hover .laptop__01,
+.home-2__content a:focus .money__01,
+.home-2__content a:focus .book__01,
+.home-2__content a:focus .contact__01,
+.home-2__content a:focus .laptop__01 {
   fill: #15B6B8; }
 
 .home-3 {
@@ -555,39 +555,29 @@ strong {
 
 .home-3__headings {
   margin-top: 4px; }
-  .home-3__headings::after {
-    clear: both;
-    content: "";
-    display: table; }
   @media only screen and (max-width: 36.25em) {
     .home-3__headings {
       margin-top: 0; } }
   .home-3__headings h4 {
-    float: left;
-    font-size: 3.2rem; }
+    display: block;
+    font-size: 3.2rem;
+    text-align: center; }
     @media only screen and (max-width: 52.5em) {
       .home-3__headings h4 {
         font-size: 2.8rem; } }
     @media only screen and (max-width: 36.25em) {
       .home-3__headings h4 {
-        display: block;
-        float: none;
         font-size: 3.2rem;
-        margin-top: 10px;
-        text-align: center; } }
+        margin-top: 10px; } }
   .home-3__headings h5 {
-    float: right;
+    display: block;
     font-size: 3.2rem;
     font-style: italic;
-    font-weight: 400; }
+    font-weight: 400;
+    text-align: center; }
     @media only screen and (max-width: 52.5em) {
       .home-3__headings h5 {
         font-size: 2.8rem; } }
-    @media only screen and (max-width: 36.25em) {
-      .home-3__headings h5 {
-        display: block;
-        float: none;
-        text-align: center; } }
     .home-3__headings h5 span:first-child {
       font-style: normal; }
     .home-3__headings h5 span:nth-child(2), .home-3__headings h5 span:nth-child(3) {
@@ -707,7 +697,7 @@ strong {
     transition: background-color .3s ease-in-out, color .3s ease-in;
     width: 100%;
     max-width: 280px; }
-    .resources-1__item a:hover, .resources-1__item a:active {
+    .resources-1__item a:hover, .resources-1__item a:focus {
       background-color: rgba(255, 255, 255, 0);
       color: #fff; }
     .resources-1__item a:not(:last-child) {
@@ -721,9 +711,9 @@ strong {
   font-size: 2rem;
   line-height: 1.5625;
   margin: 10px auto 0;
-  padding: calc(20px - 5px) 10px;
+  padding: calc(20px - 5px) 20px;
   text-align: center;
-  max-width: 240px; }
+  max-width: 280px; }
   @media only screen and (max-width: 36.25em) {
     .resources-1__location {
       margin-top: calc(10px + 2px); } }
@@ -814,7 +804,7 @@ strong {
     transition: background-color .3s ease-in-out, color .3s ease-in;
     width: 100%;
     max-width: 280px; }
-    .resources-2__item a:hover, .resources-2__item a:active {
+    .resources-2__item a:hover, .resources-2__item a:focus {
       background-color: rgba(255, 255, 255, 0);
       color: #15B6B8; }
     .resources-2__item a:not(:last-child) {
@@ -827,9 +817,9 @@ strong {
   font-size: 2rem;
   line-height: 1.5625;
   margin: 10px auto 0;
-  padding: calc(20px - 5px) 10px;
+  padding: calc(20px - 5px) 20px;
   text-align: center;
-  max-width: 240px; }
+  max-width: 280px; }
   @media only screen and (max-width: 36.25em) {
     .resources-2__location {
       margin-top: calc(10px + 2px); } }
@@ -891,8 +881,7 @@ strong {
         border-top: solid #fff 1px; } }
   .donate-1__item form input:nth-child(3) {
     background-color: transparent;
-    cursor: pointer;
-    outline: 0; }
+    cursor: pointer; }
   .donate-1__item form input:nth-child(3),
   .donate-1__item a {
     align-items: center;
@@ -937,15 +926,15 @@ strong {
       .donate-1__item form input:nth-child(3),
       .donate-1__item a {
         font-size: 7.25vw; } }
-    .donate-1__item form input:nth-child(3):hover, .donate-1__item form input:nth-child(3):active,
+    .donate-1__item form input:nth-child(3):hover, .donate-1__item form input:nth-child(3):focus,
     .donate-1__item a:hover,
-    .donate-1__item a:active {
+    .donate-1__item a:focus {
       background-color: #fff;
       color: #15B6B8; }
       @media only screen and (max-width: 36.25em) {
-        .donate-1__item form input:nth-child(3):hover, .donate-1__item form input:nth-child(3):active,
+        .donate-1__item form input:nth-child(3):hover, .donate-1__item form input:nth-child(3):focus,
         .donate-1__item a:hover,
-        .donate-1__item a:active {
+        .donate-1__item a:focus {
           background-color: transparent; } }
 
 .donate-1__icon svg {
@@ -985,7 +974,7 @@ form.donate-1__mask input:nth-child(3) {
   top: 0;
   width: 100%; }
 
-form.donate-1__mask input:hover, form.donate-1__mask input:active {
+form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   background-color: transparent; }
 
 .donate-1__hover {
@@ -1003,27 +992,30 @@ form.donate-1__mask input:hover, form.donate-1__mask input:active {
 
 .money__02,
 .book__02 {
-  fill: #FFFFFF;
+  fill: #fff;
   transition: fill .3s ease-in; }
 
 @media only screen and (max-width: 36.25em) {
   form.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
   a.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
   a.donate-1__mask:hover ~ .donate-1__icon svg .book__02,
-  a.donate-1__mask:active ~ .donate-1__icon svg .money__02,
-  a.donate-1__mask:active ~ .donate-1__icon svg .book__02 {
+  form.donate-1__mask:focus ~ .donate-1__icon svg .money__02,
+  a.donate-1__mask:focus ~ .donate-1__icon svg .money__02,
+  a.donate-1__mask:focus ~ .donate-1__icon svg .book__02 {
     fill: #15B6B8; } }
 
 @media only screen and (max-width: 36.25em) {
   form.donate-1__mask:hover ~ form input:nth-child(3),
   a.donate-1__mask:hover ~ a,
-  a.donate-1__mask:active ~ a {
+  form.donate-1__mask:focus ~ form input:nth-child(3),
+  a.donate-1__mask:focus ~ a {
     color: #15B6B8; } }
 
 @media only screen and (max-width: 36.25em) {
   form.donate-1__mask:hover ~ .donate-1__hover,
   a.donate-1__mask:hover ~ .donate-1__hover,
-  a.donate-1__mask:active ~ .donate-1__hover {
+  form.donate-1__mask:focus ~ .donate-1__hover,
+  a.donate-1__mask:focus ~ .donate-1__hover {
     background-color: rgba(255, 255, 255, 0.64); } }
 
 .books-1 {
@@ -1181,7 +1173,6 @@ form.donate-1__mask input:hover, form.donate-1__mask input:active {
     height: 54px;
     justify-content: center;
     line-height: 1;
-    outline: 0;
     padding: 0 40px;
     position: relative;
     text-align: center;
@@ -1192,7 +1183,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:active {
     @media only screen and (max-width: 26.25em) {
       .books-2__content form input:nth-child(3) {
         font-size: 2.8rem; } }
-    .books-2__content form input:nth-child(3):hover, .books-2__content form input:nth-child(3):active {
+    .books-2__content form input:nth-child(3):hover, .books-2__content form input:nth-child(3):focus {
       background-color: rgba(255, 255, 255, 0);
       color: #15B6B8; }
 
@@ -1375,11 +1366,14 @@ form.donate-1__mask input:hover, form.donate-1__mask input:active {
       margin: 0 auto;
       transition: fill .4s ease-in; }
 
-.contact-1__email-and-directions a:hover .contact-1__icon {
+.contact-1__email-and-directions a:hover .contact-1__icon,
+.contact-1__email-and-directions a:focus .contact-1__icon {
   background-color: transparent;
   transform: scale(1.15); }
   .contact-1__email-and-directions a:hover .contact-1__icon svg .email__01,
-  .contact-1__email-and-directions a:hover .contact-1__icon svg .location__01 {
+  .contact-1__email-and-directions a:hover .contact-1__icon svg .location__01,
+  .contact-1__email-and-directions a:focus .contact-1__icon svg .email__01,
+  .contact-1__email-and-directions a:focus .contact-1__icon svg .location__01 {
     fill: #111; }
 
 .contact-2 {
@@ -1451,7 +1445,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:active {
         transition: background-color .3s ease-in-out, color .3s ease-in;
         width: 100%;
         max-width: 280px; }
-        .contact-2__composition form fieldset input.contact-2__submit:hover, .contact-2__composition form fieldset input.contact-2__submit:active {
+        .contact-2__composition form fieldset input.contact-2__submit:hover, .contact-2__composition form fieldset input.contact-2__submit:focus {
           background-color: rgba(255, 255, 255, 0);
           color: #fff; }
         @media only screen and (max-width: 26.25em) {

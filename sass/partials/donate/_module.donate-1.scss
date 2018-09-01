@@ -66,7 +66,6 @@
     form input:nth-child(3) {
         background-color: transparent;
         cursor: pointer;
-        outline: 0;
     }
 
     form input:nth-child(3),
@@ -115,7 +114,7 @@
         }
 
         &:hover,
-        &:active {
+        &:focus {
             background-color: #fff;
             color: $color-primary;
 
@@ -142,7 +141,7 @@
 
         @include screen-sm {
             cursor: pointer;
-            width: 28vw
+            width: 28vw;
         }
     }
 }
@@ -174,7 +173,7 @@ form.donate-1__mask {
         }
 
         &:hover,
-        &:active {
+        &:focus {
             background-color: transparent;
         }
     }
@@ -197,15 +196,16 @@ form.donate-1__mask {
 
 .money__02,
 .book__02 {
-    fill: #FFFFFF;
+    fill: #fff;
     transition: fill .3s ease-in;
 }
 
 form.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
 a.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
 a.donate-1__mask:hover ~ .donate-1__icon svg .book__02,
-a.donate-1__mask:active ~ .donate-1__icon svg .money__02,
-a.donate-1__mask:active ~ .donate-1__icon svg .book__02 {
+form.donate-1__mask:focus ~ .donate-1__icon svg .money__02,
+a.donate-1__mask:focus ~ .donate-1__icon svg .money__02,
+a.donate-1__mask:focus ~ .donate-1__icon svg .book__02 {
     @include screen-sm {
         fill: $color-primary;
     }
@@ -213,7 +213,8 @@ a.donate-1__mask:active ~ .donate-1__icon svg .book__02 {
 
 form.donate-1__mask:hover ~ form input:nth-child(3),
 a.donate-1__mask:hover ~ a,
-a.donate-1__mask:active ~ a {
+form.donate-1__mask:focus ~ form input:nth-child(3),
+a.donate-1__mask:focus ~ a {
     @include screen-sm {
         color: $color-primary;
     }
@@ -221,7 +222,8 @@ a.donate-1__mask:active ~ a {
 
 form.donate-1__mask:hover ~ .donate-1__hover,
 a.donate-1__mask:hover ~ .donate-1__hover,
-a.donate-1__mask:active ~ .donate-1__hover {
+form.donate-1__mask:focus ~ .donate-1__hover,
+a.donate-1__mask:focus ~ .donate-1__hover {
     @include screen-sm {
         background-color: $color-overlay;
     }

@@ -49,42 +49,34 @@
 
 .home-3__headings {
     margin-top: 4px;
-    @include clearfix;
 
     @include screen-sm {
         margin-top: 0;
     }
 
     h4 {
-        float: left;
+        display: block;
         font-size: 3.2rem;
+        text-align: center;
 
         @include screen-md {
             font-size: 2.8rem;
         }
 
         @include screen-sm {
-            display: block;
-            float: none;
             font-size: 3.2rem;
             margin-top: $unit-xs;
-            text-align: center;
         }
     }
     h5 {
-        float: right;
+        display: block;
         font-size: 3.2rem;
         font-style: italic;
         font-weight: 400;
+        text-align: center;
 
         @include screen-md {
             font-size: 2.8rem;
-        }
-
-        @include screen-sm {
-            display: block;
-            float: none;
-            text-align: center;
         }
 
         span {

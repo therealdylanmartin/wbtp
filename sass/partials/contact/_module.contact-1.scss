@@ -215,14 +215,17 @@
     }
 }
 
-.contact-1__email-and-directions a:hover .contact-1__icon {
-    background-color: transparent;
-    transform: scale(1.15);
+.contact-1__email-and-directions a {
+    &:hover .contact-1__icon,
+    &:focus .contact-1__icon {
+        background-color: transparent;
+        transform: scale(1.15);
 
-    svg {
-        .email__01,
-        .location__01 {
-            fill: $color-gray-dark;
+        svg {
+            .email__01,
+            .location__01 {
+                fill: $color-gray-dark;
+            }
         }
     }
 }

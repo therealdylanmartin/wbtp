@@ -101,7 +101,7 @@
         max-width: 280px;
 
         &:hover,
-        &:active {
+        &:focus {
             background-color: rgba(255,255,255,0);
             color: $color-primary;
         }
@@ -119,9 +119,9 @@
     font-size: 2rem;
     line-height: 1.5625;
     margin: $unit-xs auto 0;
-    padding: calc(#{$unit-sm} - 5px) $unit-xs;
+    padding: calc(#{$unit-sm} - 5px) $unit-sm;
     text-align: center;
-    max-width: 240px;
+    max-width: 280px;
 
     @include screen-sm {
         margin-top: calc(#{$unit-xs} + 2px);
