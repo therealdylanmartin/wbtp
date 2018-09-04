@@ -8,6 +8,9 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <meta name="keywords" content="wisconsin books to prisoners, madison, wi, wisconsin, madison wi, donate books, donate books in madison, madison non-profit, nonprofit, madison charity, wbtp madison, abolitionist, wisconsin abolitionist, wi abolitionist resources, abolitionist resources, books for prisoners, prisoner support, wisconsin inmate support, inmate support, prisoner resources, wi prisoner resources" />
+    <meta name="description" content="<?php if ( is_front_page() ): ?>Wisconsin Books to Prisoners, based in Madison, sends requested books to inmates throughout the state of Wisconsin. In addition, WBTP offers additional resources for prisoners, abolitionists, activists, and the general public alike.<?php endif; ?><?php if( is_page('Resources') ): ?>In order to assist like-minded individuals that support the rights of the incarcerated, Wisconsin Books to Prisoners offers this extensive page of local and national resources.<?php endif; ?><?php if( is_page('Donate') ): ?>Donate books for Wisconsin inmates or help support Wisconsin Books to Prisoners by making a charitable donation.<?php endif; ?><?php if( is_page('Donate Books') ): ?>Donate your books to Wisconsin Books to Prisoners to help support local inmates by bringing your donation to local drop-sites in Madison or Milwaukee.<?php endif; ?><?php if( is_page('Contact Us') ): ?>Wisconsin Books to Prisoners is located in Madison, WI and meets every Wednesday from 3pm - 6pm. We invite you to reach out to WBTP using the online contact form.<?php endif; ?>" />
+
     <link rel="shortcut icon" type="image/png" href="wp-content/themes/wbtp/images/favicon.ico" />
     <link rel="icon" type="image/png" href="wp-content/themes/wbtp/images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="wp-content/themes/wbtp/images/favicon-16x16.png" sizes="16x16" />
@@ -25,7 +28,7 @@
 
     <header class="header">
 
-        <h1>Wisconsin Books to Prisoners</h1>
+        <h1>Wisconsin Books to Prisoners : <?php the_title(); ?></h1>
 
         <div class="header__content">
 

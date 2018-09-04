@@ -32,6 +32,7 @@
             legend {
                 display: none;
             }
+
             input,
             select,
             textarea {
@@ -49,13 +50,16 @@
                     color: $color-gray-light;
                 }
             }
+
             input,
             select {
                 height: 46px;
             }
+
             textarea {
                 padding: $unit-xs
             }
+
             input {
                 &.contact-2__submit {
                     align-items: center;

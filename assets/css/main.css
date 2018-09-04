@@ -100,8 +100,8 @@ strong {
       background-color: #fff; } }
   .header h1 {
     opacity: 0;
-    height: 0;
-    width: 0; }
+    height: 1px;
+    width: 1px; }
 
 .header__content {
   align-items: stretch;
@@ -1089,8 +1089,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     font-size: 4.2rem;
     font-style: italic;
     font-weight: 500;
-    text-align: center;
-    text-decoration: underline; }
+    text-align: center; }
 
 .books-1__address-box {
   display: flex;

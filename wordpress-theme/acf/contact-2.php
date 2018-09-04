@@ -60,6 +60,10 @@
 
         </div>
 
+        <script>
+            document.querySelector('#contactFormReason').options[0].disabled = true;
+        </script>
+
     </section>
 
 <?php endif;
