@@ -37,11 +37,11 @@
 
         &:first-child{
             border-bottom: solid #fff 1px;
+            border-right: solid #fff 1px;
             position: relative;
 
             @include screen-sm {
-                border-bottom: none;
-                border-right: none;
+                border: none;
             }
         }
 
@@ -49,13 +49,13 @@
             border-bottom: solid #fff 1px;
         }
 
+        &:nth-child(3) {
+            border-right: solid #fff 1px;
+        }
+
         &:nth-child(3),
         &:nth-child(4) {
             border-top: solid #fff 1px;
-        }
-
-        &:nth-child(odd) {
-            border-right: solid #fff 1px;
         }
 
         &:nth-child(even) {

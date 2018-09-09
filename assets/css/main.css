@@ -420,17 +420,17 @@ strong {
         color: #15B6B8; }
     .home-2__content a:first-child {
       border-bottom: solid #fff 1px;
+      border-right: solid #fff 1px;
       position: relative; }
       @media only screen and (max-width: 36.25em) {
         .home-2__content a:first-child {
-          border-bottom: none;
-          border-right: none; } }
+          border: none; } }
     .home-2__content a:nth-child(2) {
       border-bottom: solid #fff 1px; }
+    .home-2__content a:nth-child(3) {
+      border-right: solid #fff 1px; }
     .home-2__content a:nth-child(3), .home-2__content a:nth-child(4) {
       border-top: solid #fff 1px; }
-    .home-2__content a:nth-child(odd) {
-      border-right: solid #fff 1px; }
     .home-2__content a:nth-child(even) {
       border-left: solid #fff 1px; }
     @media only screen and (max-width: 36.25em) {
