@@ -12,7 +12,7 @@
     <section class="section section-copy<?php if ( $largeText ): ?> section-copy--large<?php endif; ?>">
 
         <h2><?= $title; ?></h2>
-        <hr>
+        <hr />
         <?= $text; ?>        
 
         <?php if ($additionalInfo === 'subtext'): ?>

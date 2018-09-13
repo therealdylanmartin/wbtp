@@ -3,7 +3,7 @@
 <section class="section section-copy section-copy--large">
 
     <h2>Page Not Found</h2>
-    <hr>
+    <hr />
     <p>We're not sure what happened, but you appear to be lost. We hope the navigation menu above or below can help you find your way.</p>
 
 </section>

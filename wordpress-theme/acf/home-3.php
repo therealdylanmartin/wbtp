@@ -9,7 +9,7 @@
         <section class="section home-3">
 
             <h2><?= $title; ?></h2>
-            <hr>
+            <hr />
 
             <?php while ( have_rows('event_info') ): the_row(); ?>
 

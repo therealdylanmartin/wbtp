@@ -11,7 +11,7 @@
 
             <div class="books-1__composition-1">
                 <h2><?= $title; ?></h2>
-                <hr>
+                <hr />
                 <h5><?= $text; ?></h5>
             </div>
 

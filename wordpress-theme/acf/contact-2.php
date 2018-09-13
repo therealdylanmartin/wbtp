@@ -16,7 +16,7 @@
 
             <div class="contact-2__header">
                 <h2><?= $title; ?></h2>
-                <hr>
+                <hr />
                 <h5><?= $text; ?></h5>
             </div>
 

@@ -18,7 +18,7 @@
                 ?>
 
                 <h2><?= $heading; ?></h2>
-                <hr>
+                 />
                 <?= $text; ?>
 
             <?php endwhile; ?>

@@ -20,14 +20,14 @@
 
             <div class="contact-1__header">
                 <h2><?= $title; ?></h2>
-                <hr>
+                <hr />
                 <h5><?= $text; ?></h5>
             </div>
 
             <div class="contact-1__composition">
 
                 <div class="contact-1__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.998833162837!2d-89.36645638485548!3d43.083519879144944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806537721605473%3A0x3a3f70dd2f27a3d9!2sSocial+Justice+Center!5e0!3m2!1sen!2sus!4v1534182775527" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.998833162837!2d-89.36645638485548!3d43.083519879144944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8806537721605473%3A0x3a3f70dd2f27a3d9!2sSocial+Justice+Center!5e0!3m2!1sen!2sus!4v1534182775527" frameborder="0" style="border:0"></iframe>
                 </div>
 
                 <div class="contact-1__contact">

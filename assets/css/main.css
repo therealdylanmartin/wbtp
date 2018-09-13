@@ -69,8 +69,7 @@ main {
 
 p,
 p a {
-  font-family: "Fira Sans", sans-serif;
-  font-style: italic; }
+  font-family: "Fira Sans", sans-serif; }
 
 p {
   color: #111;
@@ -709,6 +708,7 @@ strong {
   color: #111;
   font-family: "Lusitana", serif;
   font-size: 2rem;
+  font-weight: 700;
   line-height: 1.5625;
   margin: 10px auto 0;
   padding: calc(20px - 5px) 20px;
@@ -815,6 +815,7 @@ strong {
   border-radius: 20px;
   font-family: "Lusitana", serif;
   font-size: 2rem;
+  font-weight: 700;
   line-height: 1.5625;
   margin: 10px auto 0;
   padding: calc(20px - 5px) 20px;
@@ -1109,6 +1110,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   flex: 1;
   font-family: "Lusitana", serif;
   font-size: 2.4rem;
+  font-weight: 700;
   line-height: 1.5625;
   padding: 20px 10px;
   text-align: center;

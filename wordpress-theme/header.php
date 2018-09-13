@@ -21,8 +21,6 @@
 
     <title>Wisconsin Books to Prisoners : <?php the_title(); ?></title>
 
-    <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>

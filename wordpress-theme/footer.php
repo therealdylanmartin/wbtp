@@ -27,7 +27,7 @@
                             <br />1202 Williamson St. #1
                             <br />Madison, WI 53703
                         </div>
-                        <hr>
+                        <hr />
                         <div class="footer__subtext">
                             <span>{</span> we're in the basement <span>}</span>
                         </div>
@@ -44,7 +44,7 @@
                 <p>WBTP is a member of the Wisconsin Network for Peace and Justice, and is funded by the Racine Dominican Mission Fund, the Sinsinawa Dominican Sisters, Madison Community Cooperative, and members of our community.</p>
             </div>
 
-            <hr>
+            <hr />
 
             <div class="footer__copyright">
                 <p>Website designed &amp; developed by
