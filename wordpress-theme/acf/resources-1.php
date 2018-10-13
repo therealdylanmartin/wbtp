@@ -16,7 +16,7 @@
                 query_posts( array( 
                     'post_type' => 'wi_resources',
                     'orderby' => 'title',
-                    'order'   => 'ASC' 
+                    'order'   => 'ASC'
                 ) );
                 ?>
 
@@ -44,7 +44,7 @@
                             $button = get_sub_field('button');
                             ?>
 
-                            <a href="<?= $button['url']; ?>" target="_blank"><?= $button['title']; ?></a>
+                            <a href="<?= $button['url']; ?>"><?= $button['title']; ?></a>
 
                         <?php endwhile; ?>
 
