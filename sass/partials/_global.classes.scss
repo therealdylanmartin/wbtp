@@ -88,7 +88,7 @@
 
         @include screen-xs {
             font-size: 1.8rem;
-            padding: $unit-sm;
+            padding: $unit-sm $unit-xs;
         }
     }
 }

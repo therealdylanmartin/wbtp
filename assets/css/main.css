@@ -68,10 +68,12 @@ main {
       padding: 0 10px; } }
 
 p,
-p a {
+p a,
+.section-copy ul li {
   font-family: "Fira Sans", sans-serif; }
 
-p {
+p,
+.section-copy ul {
   color: #111;
   font-weight: 400;
   line-height: 1.5625;
@@ -80,7 +82,8 @@ p {
   margin-right: auto;
   max-width: 515px; }
   @media only screen and (max-width: 52.5em) {
-    p {
+    p,
+    .section-copy ul {
       margin-bottom: calc(20px + 10px); } }
 
 p a {
@@ -88,6 +91,9 @@ p a {
 
 strong {
   font-weight: 700; }
+
+.section-copy ul {
+  transform: translateX(2rem); }
 
 .header {
   background-color: #15B6B8;
@@ -119,7 +125,7 @@ strong {
     @media only screen and (max-width: 52.5em) {
       .header__content nav {
         border-top: solid #fff 2px; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .header__content nav {
         border-top: none; }
         .header__content nav::after {
@@ -136,7 +142,7 @@ strong {
           justify-content: center;
           margin: 0 auto;
           width: auto; } }
-      @media only screen and (max-width: 36.25em) {
+      @media only screen and (max-width: 41.375em) {
         .header__content nav ul {
           display: block;
           width: 100%; } }
@@ -147,7 +153,7 @@ strong {
         align-items: center;
         display: flex;
         position: relative; }
-        @media only screen and (max-width: 36.25em) {
+        @media only screen and (max-width: 41.375em) {
           .header__content nav ul li {
             display: block;
             float: left;
@@ -157,7 +163,7 @@ strong {
           .header__content nav ul li {
             width: 100%;
             float: none; } }
-        @media only screen and (max-width: 36.25em) {
+        @media only screen and (max-width: 41.375em) {
           .header__content nav ul li:nth-child(odd) a {
             border-right: solid #fff 2px; } }
         @media only screen and (max-width: 26.25em) {
@@ -181,13 +187,13 @@ strong {
             color: #fff; }
           .header__content nav ul li a:hover, .header__content nav ul li a:focus {
             color: #15B6B8; }
-            @media only screen and (max-width: 36.25em) {
+            @media only screen and (max-width: 41.375em) {
               .header__content nav ul li a:hover, .header__content nav ul li a:focus {
                 background-color: rgba(255, 255, 255, 0.64); } }
           @media only screen and (max-width: 52.5em) {
             .header__content nav ul li a {
               padding: 10px; } }
-          @media only screen and (max-width: 36.25em) {
+          @media only screen and (max-width: 41.375em) {
             .header__content nav ul li a {
               border-right: none;
               border-top: solid #fff 2px;
@@ -247,7 +253,7 @@ strong {
   margin-right: -4px;
   width: 8px;
   z-index: 2; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .header__divider {
       display: none; } }
 
@@ -259,7 +265,7 @@ strong {
   top: 0;
   transition: all .3s ease-in-out;
   width: 100%; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .header__mask {
       display: none; } }
 
@@ -292,7 +298,7 @@ strong {
   line-height: 1.65;
   text-align: center;
   max-width: 545px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .section-copy--large p {
       font-size: 1.8rem;
       line-height: 1.8;
@@ -307,7 +313,7 @@ strong {
   margin-top: 40px;
   text-align: center;
   white-space: nowrap; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .subtext {
       font-size: 4.6rem; } }
   @media only screen and (max-width: 26.25em) {
@@ -343,7 +349,7 @@ strong {
     @media only screen and (max-width: 26.25em) {
       .more-info h5 {
         font-size: 1.8rem;
-        padding: 20px; } }
+        padding: 20px 10px; } }
 
 .home-1 {
   align-items: flex-start;
@@ -369,7 +375,7 @@ strong {
     .home-1__content {
       margin-left: 10px;
       width: auto; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .home-1__content {
       margin-left: 0; } }
   .home-1__content h2 {
@@ -421,7 +427,7 @@ strong {
       border-bottom: solid #fff 1px;
       border-right: solid #fff 1px;
       position: relative; }
-      @media only screen and (max-width: 36.25em) {
+      @media only screen and (max-width: 41.375em) {
         .home-2__content a:first-child {
           border: none; } }
     .home-2__content a:nth-child(2) {
@@ -432,7 +438,7 @@ strong {
       border-top: solid #fff 1px; }
     .home-2__content a:nth-child(even) {
       border-left: solid #fff 1px; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .home-2__content a:not(:first-child) {
         border: none;
         border-top: solid #fff 2px; } }
@@ -442,7 +448,7 @@ strong {
     @media only screen and (max-width: 61.25em) {
       .home-2__content a {
         height: 290px; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .home-2__content a {
         flex-direction: row;
         float: none;
@@ -462,31 +468,13 @@ strong {
       @media only screen and (max-width: 61.25em) {
         .home-2__content a h2 {
           font-size: 3.4rem; } }
-      @media only screen and (max-width: 36.25em) {
+      @media only screen and (max-width: 41.375em) {
         .home-2__content a h2 {
           font-size: 6.25vw;
           width: 52vw; } }
       @media only screen and (max-width: 26.25em) {
         .home-2__content a h2 {
           font-size: 7.25vw; } }
-    .home-2__content a form {
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 100%;
-      z-index: 3; }
-      .home-2__content a form input:nth-child(3) {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: block;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%; }
 
 .home-2__icon svg {
   width: 160px; }
@@ -496,7 +484,7 @@ strong {
   @media only screen and (max-width: 61.25em) {
     .home-2__icon svg {
       width: 148px; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .home-2__icon svg {
       width: 28vw; } }
 
@@ -554,7 +542,7 @@ strong {
 
 .home-3__headings {
   margin-top: 4px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .home-3__headings {
       margin-top: 0; } }
   .home-3__headings h4 {
@@ -564,7 +552,7 @@ strong {
     @media only screen and (max-width: 52.5em) {
       .home-3__headings h4 {
         font-size: 2.8rem; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .home-3__headings h4 {
         font-size: 3.2rem;
         margin-top: 10px; } }
@@ -593,7 +581,7 @@ strong {
   padding: 20px 10px;
   text-align: center;
   max-width: 320px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .home-3__location {
       margin: calc(10px + 2px) auto 20px; } }
   @media only screen and (max-width: 26.25em) {
@@ -607,7 +595,7 @@ strong {
   padding: 80px 20px;
   width: 100%;
   width: 100vw; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .resources-1 {
       padding: 80px 10px; } }
   @media only screen and (max-width: 26.25em) {
@@ -625,7 +613,7 @@ strong {
     font-weight: 500;
     padding: calc(20px + 5px) 10px;
     text-align: center; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .resources-1__content h2 {
         background-color: transparent;
         color: #fff;
@@ -636,7 +624,7 @@ strong {
   flex-wrap: wrap;
   justify-content: center;
   margin-right: -15px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .resources-1__composition {
       display: block;
       margin-right: 0; } }
@@ -652,7 +640,7 @@ strong {
   padding: 20px;
   min-width: 280px;
   max-width: 445px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .resources-1__item {
       margin-left: auto;
       margin-right: auto;
@@ -671,7 +659,7 @@ strong {
     @media only screen and (min-width: 68.75em) {
       .resources-1__item p {
         font-size: 1.6rem; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .resources-1__item p {
         margin-bottom: calc(10px + 5px);
         margin-top: calc(10px + 5px); } }
@@ -714,7 +702,7 @@ strong {
   padding: calc(20px - 5px) 20px;
   text-align: center;
   max-width: 280px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .resources-1__location {
       margin-top: calc(10px + 2px); } }
 
@@ -733,7 +721,7 @@ strong {
     font-weight: 500;
     padding: calc(20px + 5px) 10px;
     text-align: center; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .resources-2__content h2 {
         background-color: transparent;
         color: #15B6B8;
@@ -744,7 +732,7 @@ strong {
   flex-wrap: wrap;
   justify-content: center;
   margin-right: -15px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .resources-2__composition {
       display: block;
       margin-right: 0; } }
@@ -760,7 +748,7 @@ strong {
   padding: 20px;
   min-width: 280px;
   max-width: 445px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .resources-2__item {
       margin-left: auto;
       margin-right: auto;
@@ -779,7 +767,7 @@ strong {
     @media only screen and (min-width: 68.75em) {
       .resources-2__item p {
         font-size: 1.6rem; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .resources-2__item p {
         margin-bottom: calc(10px + 5px);
         margin-top: calc(10px + 5px); } }
@@ -821,7 +809,7 @@ strong {
   padding: calc(20px - 5px) 20px;
   text-align: center;
   max-width: 280px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .resources-2__location {
       margin-top: calc(10px + 2px); } }
 
@@ -860,7 +848,7 @@ strong {
   @media only screen and (max-width: 61.25em) {
     .donate-1__item {
       height: 290px; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .donate-1__item {
       flex-direction: row;
       float: none;
@@ -870,13 +858,13 @@ strong {
       width: 100%; } }
   .donate-1__item:nth-child(1) {
     border-right: solid #fff 1px; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .donate-1__item:nth-child(1) {
         border-right: none;
         border-bottom: solid #fff 1px; } }
   .donate-1__item:nth-child(2) {
     border-left: solid #fff 1px; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .donate-1__item:nth-child(2) {
         border-left: none;
         border-top: solid #fff 1px; } }
@@ -914,7 +902,7 @@ strong {
       .donate-1__item form input:nth-child(3),
       .donate-1__item a {
         padding: 0 20px; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .donate-1__item form input:nth-child(3),
       .donate-1__item a {
         border: none;
@@ -932,7 +920,7 @@ strong {
     .donate-1__item a:focus {
       background-color: #fff;
       color: #15B6B8; }
-      @media only screen and (max-width: 36.25em) {
+      @media only screen and (max-width: 41.375em) {
         .donate-1__item form input:nth-child(3):hover, .donate-1__item form input:nth-child(3):focus,
         .donate-1__item a:hover,
         .donate-1__item a:focus {
@@ -948,7 +936,7 @@ strong {
   @media only screen and (max-width: 61.25em) {
     .donate-1__icon svg {
       width: 148px; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .donate-1__icon svg {
       cursor: pointer;
       width: 28vw; } }
@@ -956,7 +944,7 @@ strong {
 form.donate-1__mask,
 a.donate-1__mask {
   display: none; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     form.donate-1__mask,
     a.donate-1__mask {
       display: block;
@@ -980,7 +968,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
 
 .donate-1__hover {
   display: none; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .donate-1__hover {
       display: block;
       height: 100%;
@@ -996,7 +984,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   fill: #fff;
   transition: fill .3s ease-in; }
 
-@media only screen and (max-width: 36.25em) {
+@media only screen and (max-width: 41.375em) {
   form.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
   a.donate-1__mask:hover ~ .donate-1__icon svg .money__02,
   a.donate-1__mask:hover ~ .donate-1__icon svg .book__02,
@@ -1005,14 +993,14 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   a.donate-1__mask:focus ~ .donate-1__icon svg .book__02 {
     fill: #15B6B8; } }
 
-@media only screen and (max-width: 36.25em) {
+@media only screen and (max-width: 41.375em) {
   form.donate-1__mask:hover ~ form input:nth-child(3),
   a.donate-1__mask:hover ~ a,
   form.donate-1__mask:focus ~ form input:nth-child(3),
   a.donate-1__mask:focus ~ a {
     color: #15B6B8; } }
 
-@media only screen and (max-width: 36.25em) {
+@media only screen and (max-width: 41.375em) {
   form.donate-1__mask:hover ~ .donate-1__hover,
   a.donate-1__mask:hover ~ .donate-1__hover,
   form.donate-1__mask:focus ~ .donate-1__hover,
@@ -1025,7 +1013,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   padding: 80px 20px;
   width: 100%;
   width: 100vw; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .books-1 {
       padding: 80px 10px; } }
   @media only screen and (max-width: 26.25em) {
@@ -1039,7 +1027,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
 .books-1__composition-1 {
   background-color: #fff;
   padding: 20px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .books-1__composition-1 {
       background-color: transparent;
       padding: 0 0 20px; } }
@@ -1047,14 +1035,14 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     font-size: 4.6rem;
     line-height: 1;
     text-align: center; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .books-1__composition-1 h2 {
         color: #fff; } }
   .books-1__composition-1 hr {
     border: solid #15B6B8 1.5px;
     margin: 10px auto;
     max-width: 400px; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .books-1__composition-1 hr {
         border-color: #fff; } }
   .books-1__composition-1 h5 {
@@ -1066,7 +1054,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     margin: 0 auto;
     text-align: center;
     max-width: 480px; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .books-1__composition-1 h5 {
         color: #fff; } }
     @media only screen and (max-width: 26.25em) {
@@ -1081,7 +1069,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   @media only screen and (max-width: 52.5em) {
     .books-1__composition-2 {
       padding: 20px; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .books-1__composition-2 {
       border: none;
       padding: 20px 0; } }
@@ -1096,10 +1084,10 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   display: flex;
   justify-content: space-around;
   padding: 10px 0 40px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .books-1__address-box {
       display: block; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .books-1__address-box:last-child {
       padding-bottom: 0; } }
 
@@ -1119,7 +1107,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     .books-1__address-item {
       font-size: 3.15vw;
       min-width: 180px; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .books-1__address-item {
       font-size: 2.2rem;
       margin-left: auto;
@@ -1131,7 +1119,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     @media only screen and (max-width: 52.5em) {
       .books-1__address-item:nth-child(1) {
         margin-right: 10px; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .books-1__address-item:nth-child(1) {
         margin-right: auto; } }
   .books-1__address-item:nth-child(2) {
@@ -1139,7 +1127,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     @media only screen and (max-width: 52.5em) {
       .books-1__address-item:nth-child(2) {
         margin-left: 10px; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .books-1__address-item:nth-child(2) {
         margin-left: auto;
         margin-top: 20px; } }
@@ -1151,15 +1139,45 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 260px;
+  min-height: 260px;
   justify-content: space-evenly;
   text-decoration: none; }
   @media only screen and (min-width: 68.75em) {
     .books-2__content {
-      height: 270px; } }
+      min-height: 270px; } }
   @media only screen and (max-width: 26.25em) {
     .books-2__content {
-      height: 240px; } }
+      min-height: 240px; } }
+  .books-2__content a {
+    align-items: center;
+    background-color: #15B6B8;
+    border: solid #15B6B8 1.5px;
+    border-radius: 27px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    height: 54px;
+    justify-content: center;
+    line-height: 1;
+    margin-bottom: 2rem;
+    padding: 0 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s ease-in-out, color .3s ease-in;
+    white-space: nowrap;
+    z-index: 2; }
+    @media only screen and (max-width: 26.25em) {
+      .books-2__content a {
+        font-size: 2.6rem;
+        padding: 0 20px; } }
+    .books-2__content a:hover, .books-2__content a:focus {
+      background-color: rgba(255, 255, 255, 0);
+      color: #15B6B8; }
   .books-2__content form input:nth-child(3) {
     align-items: center;
     background-color: #15B6B8;
@@ -1169,24 +1187,29 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     cursor: pointer;
     display: flex;
     font-family: "Fira Sans", sans-serif;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     font-weight: 500;
     height: 54px;
     justify-content: center;
     line-height: 1;
+    margin-bottom: 2rem;
     padding: 0 40px;
     position: relative;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     transition: background-color .3s ease-in-out, color .3s ease-in;
+    white-space: nowrap;
     z-index: 2; }
     @media only screen and (max-width: 26.25em) {
       .books-2__content form input:nth-child(3) {
-        font-size: 2.8rem; } }
+        font-size: 2.6rem;
+        padding: 0 20px; } }
     .books-2__content form input:nth-child(3):hover, .books-2__content form input:nth-child(3):focus {
       background-color: rgba(255, 255, 255, 0);
       color: #15B6B8; }
+  .books-2__content p {
+    margin-bottom: 10px; }
 
 .books-2__icon svg {
   position: relative;
@@ -1199,7 +1222,8 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     .books-2__icon svg {
       width: 156px; } }
 
-.money__03 {
+.money__03,
+.list__01 {
   fill: #15B6B8; }
 
 .contact-1 {
@@ -1220,7 +1244,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
 .contact-1__header {
   border: solid #fff 2px;
   padding: 20px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .contact-1__header {
       border: none;
       padding: 0 0 40px; } }
@@ -1245,7 +1269,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     margin: 0 auto;
     text-align: center;
     max-width: 420px; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .contact-1__header h5 {
         max-width: 340px; } }
     @media only screen and (max-width: 26.25em) {
@@ -1259,7 +1283,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   border-top: none;
   display: flex;
   width: 100%; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .contact-1__composition {
       border-top: solid #fff 2px;
       display: block;
@@ -1274,7 +1298,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   height: 420px;
   overflow: hidden;
   width: 50%; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .contact-1__map {
       border: none;
       width: 100%; } }
@@ -1294,7 +1318,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   justify-content: space-evenly;
   padding: 20px;
   width: 50%; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .contact-1__contact {
       border: none;
       min-height: 280px;
@@ -1388,7 +1412,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   margin: 0 auto;
   padding: 40px;
   max-width: 520px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .contact-2__composition {
       padding: 20px; } }
   @media only screen and (max-width: 26.25em) {
@@ -1476,7 +1500,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     margin: 0 auto;
     text-align: center;
     max-width: 420px; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .contact-2__header h5 {
         max-width: 340px; } }
     @media only screen and (max-width: 26.25em) {
@@ -1495,7 +1519,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   max-width: 800px; }
   .footer__content hr {
     display: none; }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .footer__content hr {
         border: solid #fff 1px;
         display: block;
@@ -1504,7 +1528,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
 
 .footer__composition {
   display: flex; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .footer__composition {
       display: block; } }
 
@@ -1513,7 +1537,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   @media only screen and (max-width: 52.5em) {
     .footer__logo {
       width: 33.33%; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .footer__logo {
       display: none; } }
   .footer__logo img {
@@ -1521,7 +1545,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
 
 .footer__logo--mobile {
   display: none; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .footer__logo--mobile {
       display: block;
       margin: 0 auto;
@@ -1539,7 +1563,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   @media only screen and (max-width: 52.5em) {
     .footer__contact-info {
       width: 66.67%; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .footer__contact-info {
       border: none;
       min-height: 320px;
@@ -1553,7 +1577,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     @media only screen and (max-width: 52.5em) {
       .footer__contact-info span h3 {
         font-size: 3.4vw; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .footer__contact-info span h3 {
         font-size: 2.8rem; } }
   .footer__contact-info span hr {
@@ -1570,7 +1594,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
     @media only screen and (max-width: 52.5em) {
       .footer__contact-info span a {
         font-size: 2.85vw; } }
-    @media only screen and (max-width: 36.25em) {
+    @media only screen and (max-width: 41.375em) {
       .footer__contact-info span a {
         font-size: 4vw; } }
     @media only screen and (max-width: 26.25em) {
@@ -1586,7 +1610,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   @media only screen and (max-width: 52.5em) {
     .footer__address {
       font-size: 3.3vw; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .footer__address {
       font-size: 2.6rem; } }
   @media only screen and (max-width: 26.25em) {
@@ -1602,7 +1626,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   @media only screen and (max-width: 52.5em) {
     .footer__subtext {
       font-size: 2.85vw; } }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .footer__subtext {
       font-size: 4vw; } }
   @media only screen and (max-width: 26.25em) {
@@ -1617,7 +1641,7 @@ form.donate-1__mask input:hover, form.donate-1__mask input:focus {
   border: solid #fff 2px;
   border-top: none;
   padding: 20px; }
-  @media only screen and (max-width: 36.25em) {
+  @media only screen and (max-width: 41.375em) {
     .footer__network {
       border: none;
       padding: calc(40px - 10px) 10px 0; } }

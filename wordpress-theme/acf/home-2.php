@@ -3,7 +3,7 @@
 <?php if (get_row_layout() == 'home_2'): ?>
 
     <?php
-    $button1Text = get_sub_field('button_1_text');
+    $button1 = get_sub_field('button_1');
     $button2 = get_sub_field('button_2');
     $button3 = get_sub_field('button_3');
     $button4 = get_sub_field('button_4');
@@ -13,7 +13,8 @@
 
         <div class="home-2__content">
 
-            <a>
+            
+            <a href="<?= $button1['url']; ?>">
                 <div class="home-2__icon">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 184 148" style="enable-background:new 0 0 184 148;" xml:space="preserve">
@@ -42,12 +43,7 @@
                     </g>
                     </svg>
                 </div>
-                <h2><?= $button1Text; ?></h2>
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick" />
-                    <input type="hidden" name="hosted_button_id" value="X53GLJHEM38WW" />
-                    <input type="submit" name="submit" alt="Donate using PayPal" formtarget="_blank" value="" />
-                </form>
+                <h2><?= $button1['title']; ?></h2>
             </a>
             <a href="<?= $button2['url']; ?>">
                 <div class="home-2__icon">

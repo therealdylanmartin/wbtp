@@ -32,37 +32,43 @@
         <div class="header__content">
 
             <div class="header__logo">
-                <picture>
-                    <img srcset="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo.png, <?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_hr.png 1.5x" src="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_hr.png" alt="Wisconsin Books to Prisoners" title="Wisconsin Books to Prisoners" />
-                </picture>
+                <a <?php if( is_front_page() ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_front_page() ) : echo 'href="' . get_home_url() . '"'; endif; ?>>
+                    <picture>
+                        <img srcset="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo.png, <?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_hr.png 1.5x" src="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_hr.png" alt="Wisconsin Books to Prisoners" title="Wisconsin Books to Prisoners" />
+                    </picture>
+                </a>
             </div>
 
             <div class="header__logo header__logo--tablet">
-                <picture>
-                    <img srcset="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_footer-logo_mobile.png, <?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_footer-logo_mobile_hr.png 1.5x" src="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_footer-logo_mobile.png" alt="Wisconsin Books to Prisoners" title="Wisconsin Books to Prisoners" />
-                </picture>
+                <a <?php if( is_front_page() ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_front_page() ) : echo 'href="' . get_home_url() . '"'; endif; ?>>
+                    <picture>
+                        <img srcset="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_footer-logo_mobile.png, <?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_footer-logo_mobile_hr.png 1.5x" src="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_footer-logo_mobile.png" alt="Wisconsin Books to Prisoners" title="Wisconsin Books to Prisoners" />
+                    </picture>
+                </a>
             </div>
 
             <div class="header__logo header__logo--mobile">
-                <picture>
-                    <img srcset="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_mobile.png, <?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_mobile_hr.png 1.5x" src="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_mobile.png" alt="Wisconsin Books to Prisoners" title="Wisconsin Books to Prisoners" />
-                </picture>
+                <a <?php if( is_front_page() ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_front_page() ) : echo 'href="' . get_home_url() . '"'; endif; ?>>
+                    <picture>
+                        <img srcset="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_mobile.png, <?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_mobile_hr.png 1.5x" src="<?php if ( !is_front_page() ): ?>../<?php endif; ?>wp-content/themes/wbtp/images/wbtp_header-logo_mobile.png" alt="Wisconsin Books to Prisoners" title="Wisconsin Books to Prisoners" />
+                    </picture>
+                </a>
             </div>
 
             <nav>
                 <ul>
                     <li>
-                        <a <?php if( is_front_page() ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_front_page() ) : echo 'href="' . get_home_url() . '"'; endif; ?>>Home</a>
+                        <a <?php if( is_page('Resources') ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_page('Resources') ) : echo 'href="' . get_home_url() . '/resources"'; endif; ?>>Resources</a>
                         <div class="header__mask"></div>
                         <div class="header__divider"></div>
                     </li>
                     <li>
-                        <a <?php if( is_page('Resources') ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_page('resources') ) : echo 'href="' . get_home_url() . '/resources"'; endif; ?>>Resources</a>
+                        <a <?php if( is_page('Contribute') ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_page('Contribute') ) : echo 'href="' . get_home_url() . '/contribute"'; endif; ?>>Contribute</a>
                         <div class="header__mask"></div>
                         <div class="header__divider"></div>
                     </li>
                     <li>
-                        <a <?php if( is_page('Donate') ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_page('donate') ) : echo 'href="' . get_home_url() . '/donate"'; endif; ?>>Donate</a>
+                        <a <?php if( is_page('Donate Books') ) : echo 'class="nav-disabled" '; endif; ?><?php if( !is_page('Donate Books') ) : echo 'href="' . get_home_url() . '/donate-books"'; endif; ?>>Donate Books</a>
                         <div class="header__mask"></div>
                         <div class="header__divider"></div>
                     </li>

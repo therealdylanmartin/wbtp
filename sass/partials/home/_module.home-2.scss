@@ -109,30 +109,6 @@
                 font-size: 7.25vw;
             }
         }
-
-        form {
-            display: block;
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            z-index: 3;
-        
-            input {
-                &:nth-child(3) {
-                    background-color: transparent;
-                    border: none;
-                    cursor: pointer;
-                    display: block;
-                    height: 100%;
-                    left: 0;
-                    position: absolute;
-                    top: 0;
-                    width: 100%;         
-                }
-            }
-        }
     }
 }
 

@@ -48,8 +48,9 @@
 
             <div class="footer__copyright">
                 <p>Website designed &amp; developed by
-                    <a href="https://www.linkedin.com/in/dylan-martin-96034a150" target="_blank">Dylan Martin</a>.
-                    <br />2018 <span>&copy;</span> Wisconsin Books to Prisoners</p>
+                    <a href="http://dylanmartindesigns.com/" target="_blank">Dylan Martin</a>
+                    <br />Some components sourced from <a href="https://www.flaticon.com/" target="_blank">Flat Icon</a>
+                    <br /><?= date('Y'); ?> <span>&copy;</span> Wisconsin Books to Prisoners</p>
             </div>
 
         </div>

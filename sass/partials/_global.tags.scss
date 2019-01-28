@@ -77,11 +77,13 @@ main {
 }
 
 p,
-p a {
+p a,
+.section-copy ul li {
     font-family: $font-primary;
 }
 
-p {
+p,
+.section-copy ul {
     color: $color-gray-dark;
     font-weight: 400;
     line-height: 1.5625;
@@ -101,4 +103,8 @@ p a {
 
 strong {
     font-weight: 700;
+}
+
+.section-copy ul {
+    transform: translateX(2rem);
 }

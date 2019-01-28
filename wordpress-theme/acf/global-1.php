@@ -9,7 +9,7 @@
     $addendumTitle = get_sub_field('addendum_title');
     ?>
 
-    <section class="section section-copy<?php if ( $largeText ): ?> section-copy--large<?php endif; ?>">
+<section class="section section-copy<?php if ( $largeText ): ?> section-copy--large<?php endif; ?>"<?php if( is_page('Contribute') ): ?> style="margin-bottom: 0;"<?php endif; ?><?php if( is_page('Donate Books') ): ?> style="margin-bottom: 5rem;"<?php endif; ?>>
 
         <h2><?= $title; ?></h2>
         <hr />
